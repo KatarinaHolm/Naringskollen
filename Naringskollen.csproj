@@ -23,7 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Dtos\FoodSearchDtos\" />
+    <Folder Include="Dtos\SystemFoodDtos\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Repositories\IRepositories\" />
+    <Folder Include="Services\IServices\" />
   </ItemGroup>
 
 </Project>
