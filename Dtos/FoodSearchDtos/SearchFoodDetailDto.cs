@@ -1,10 +1,12 @@
-﻿namespace Naringskollen.Models
+﻿namespace Naringskollen.Dtos.FoodSearchDtos
 {
-    public class SystemFood
+    public class SearchFoodDetailDto
     {
-        public int Id { get; set; }
-
         public string Name { get; set; }
+
+        public double Quantity { get; set; }
+
+        public string Unit { get; set; }
 
         public double Kcal { get; set; }
 
@@ -25,13 +27,7 @@
         public double? PolyunsaturatedFat { get; set; }
 
         public double? Oxalate { get; set; }
-
-        public double? GramPerDl { get; set; }
-
-        public double? GramPerPiece { get; set; }
-
-        public int CategoryId { get; set; }
-
-        public Category Category { get; set; }
+                
+        public string Category { get; set; }
     }
 }

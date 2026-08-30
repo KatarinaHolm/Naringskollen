@@ -1,9 +1,9 @@
-﻿namespace Naringskollen.Models
-{
-    public class SystemFood
-    {
-        public int Id { get; set; }
+﻿using Naringskollen.Models;
 
+namespace Naringskollen.Dtos.SystemFoodDtos
+{
+    public class SystemFoodDetailDto
+    {
         public string Name { get; set; }
 
         public double Kcal { get; set; }
@@ -30,8 +30,7 @@
 
         public double? GramPerPiece { get; set; }
 
-        public int CategoryId { get; set; }
-
-        public Category Category { get; set; }
+        public string Category { get; set; }
+        
     }
 }
