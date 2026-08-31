@@ -5,9 +5,7 @@ namespace Naringskollen.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SystemFoodsController : ControllerBase
+    public class CategoriesController : ControllerBase
     {
-        //All CRUDs
-        //Authorize Admin on all
     }
 }
