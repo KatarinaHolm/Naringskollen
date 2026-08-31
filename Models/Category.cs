@@ -6,8 +6,8 @@
 
         public string? Name { get; set; }
 
-        public List<ApiFoodSupplement> ApiFoodSupplements { get; set; }
+        public List<FoodMeasurement> ApiFoodSupplements { get; set; }
 
-        public List<SystemFood> SystemFoods { get; set; }
+        public List<Food> Foods { get; set; }
     }
 }

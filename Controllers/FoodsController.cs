@@ -5,10 +5,14 @@ namespace Naringskollen.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SearchFoodsController : ControllerBase
+    public class FoodsController : ControllerBase
     {
-        // Only GetAll and GetById
-        //Obs! FoodId will be the internal dbs Id if isSystem = true, otherwise it will be LivsmedelverketId.
+        //All CRUDs
+        //Authorize: Admin -  on Create, Put, Patch och Delete.
+
+        //Obs! isSystem = true means the food is not from Livsmedelverkets database.
+
+        //GetAll() - SummaryDto
 
         //GetById - no dto.
         //Id in Route, others in query: [FromQuery] bool isSystem, [FromQuery] double quantity, [FromQuery] string unit

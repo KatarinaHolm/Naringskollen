@@ -1,6 +1,6 @@
-﻿namespace Naringskollen.Dtos.SystemFoodDtos
+﻿namespace Naringskollen.Dtos.FoodDtos.In
 {
-    public class SystemFoodSummaryDto
+    public class UpdateFoodMetadataDto
     {
         public int Id { get; set; }
 
