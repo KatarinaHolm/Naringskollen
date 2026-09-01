@@ -15,6 +15,6 @@ namespace Naringskollen.Controllers
         //GetAll() - SummaryDto
 
         //GetById - no dto.
-        //Id in Route, others in query: [FromQuery] bool isSystem, [FromQuery] double quantity, [FromQuery] string unit
+        //Id in Route, others in query: [FromQuery] bool isSystem, [FromQuery] decimal quantity, [FromQuery] string unit
     }
 }

@@ -1,4 +1,6 @@
-﻿using Naringskollen.Dtos.FoodMeasurementsDtos;
+﻿using Microsoft.EntityFrameworkCore;
+using Naringskollen.Dtos.FoodMeasurementsDtos;
+using System.ComponentModel.DataAnnotations;
 
 namespace Naringskollen.Models
 {
@@ -8,30 +10,63 @@ namespace Naringskollen.Models
 
         public int? ExternalId { get; set; }
 
+        [Required]
+        [StringLength(100)]
         public string Name { get; set; }
 
+        [Required]
         public bool IsSystem { get; set; }
 
-        public double? Oxalate { get; set; }
+        [Range(0, 100000)]
+        [Precision(10, 2)]
+        public decimal? Oxalate { get; set; }
 
-        public double Kcal { get; set; }
+        [Required]
+        [Range(0, 1000)]
+        [Precision(10, 2)]
+        public decimal Kcal { get; set; }
 
-        public double Fat { get; set; }
+        [Required]
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal Fat { get; set; }
 
-        public double Protein { get; set; }
+        [Required]
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal Protein { get; set; }
 
-        public double Carbohydrate { get; set; }
+        [Required]
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal Carbohydrate { get; set; }
 
-        public double Fiber { get; set; }
+        [Required]
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal Fiber { get; set; }
 
-        public double TotalSugar { get; set; }
+        [Required]
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal TotalSugar { get; set; }
 
-        public double? SaturatedFat { get; set; }
-
-        public double? MonounsaturatedFat { get; set; }
-
-        public double? PolyunsaturatedFat { get; set; }
         
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal? SaturatedFat { get; set; }
+
+        
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal? MonounsaturatedFat { get; set; }
+
+        
+        [Range(0, 100)]
+        [Precision(5, 2)]
+        public decimal? PolyunsaturatedFat { get; set; }
+
+        [Required]
         public int CategoryId { get; set; }
 
         public Category Category { get; set; }

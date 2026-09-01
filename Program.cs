@@ -30,6 +30,8 @@ namespace Naringskollen
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
+            builder.Services.AddAuthorization();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -41,7 +43,11 @@ namespace Naringskollen
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
+
+            app.MapIdentityApi<IdentityUser<int>>();
 
             app.MapControllers();
 
