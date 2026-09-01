@@ -1,4 +1,6 @@
-﻿namespace Naringskollen.Models
+﻿using Naringskollen.Dtos.FoodMeasurementsDtos;
+
+namespace Naringskollen.Models
 {
     public class Food
     {
@@ -29,10 +31,11 @@
         public double? MonounsaturatedFat { get; set; }
 
         public double? PolyunsaturatedFat { get; set; }
-
         
         public int CategoryId { get; set; }
 
         public Category Category { get; set; }
+
+        public List<FoodMeasurement> FoodMeasurements { get; set; }
     }
 }

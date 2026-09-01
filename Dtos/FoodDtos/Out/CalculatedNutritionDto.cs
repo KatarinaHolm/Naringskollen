@@ -1,11 +1,14 @@
-﻿using Naringskollen.Dtos.FoodMeasurementsDtos;
-using Naringskollen.Models;
-
-namespace Naringskollen.Dtos.FoodDtos.In
+﻿namespace Naringskollen.Dtos.FoodDtos.Out
 {
-    public class CreateFoodDto
+    public class CalculatedNutritionDto
     {
         public string Name { get; set; }
+
+        public double Quantity { get; set; }
+
+        public string Unit { get; set; }
+
+        public int CalculatedGrams { get; set; }     
 
         public double? Oxalate { get; set; }
 
@@ -25,11 +28,9 @@ namespace Naringskollen.Dtos.FoodDtos.In
 
         public double? MonounsaturatedFat { get; set; }
 
-        public double? PolyunsaturatedFat { get; set; }        
-        
-        public int CategoryId { get; set; }
-
-        public List<FoodMeasurementDto> FoodMeasurements { get; set; }
+        public double? PolyunsaturatedFat { get; set; }
+                
+        public string Category { get; set; } 
 
     }
 }
