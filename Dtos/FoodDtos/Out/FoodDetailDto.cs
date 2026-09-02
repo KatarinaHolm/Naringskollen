@@ -13,25 +13,25 @@ namespace Naringskollen.Dtos.FoodDtos.Out
 
         public bool IsSystem { get; set; }
 
-        public double? Oxalate { get; set; }
+        public decimal? Oxalate { get; set; }
 
-        public double Kcal { get; set; }
+        public decimal Kcal { get; set; }
 
-        public double Fat { get; set; }
+        public decimal Fat { get; set; }
 
-        public double Protein { get; set; }
+        public decimal Protein { get; set; }
 
-        public double Carbohydrate { get; set; }
+        public decimal Carbohydrate { get; set; }
 
-        public double Fiber { get; set; }
+        public decimal Fiber { get; set; }
 
-        public double TotalSugar { get; set; }
+        public decimal TotalSugar { get; set; }
 
-        public double? SaturatedFat { get; set; }
+        public decimal? SaturatedFat { get; set; }
 
-        public double? MonounsaturatedFat { get; set; }
+        public decimal? MonounsaturatedFat { get; set; }
 
-        public double? PolyunsaturatedFat { get; set; }
+        public decimal? PolyunsaturatedFat { get; set; }
 
         public int CategoryId { get; set; }
 
