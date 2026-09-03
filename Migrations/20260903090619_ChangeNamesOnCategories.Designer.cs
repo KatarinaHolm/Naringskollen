@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Naringskollen.Data;
 
@@ -11,9 +12,11 @@ using Naringskollen.Data;
 namespace Naringskollen.Migrations
 {
     [DbContext(typeof(NaringskollenDbContext))]
-    partial class NaringskollenDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260903090619_ChangeNamesOnCategories")]
+    partial class ChangeNamesOnCategories
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,6 +53,15 @@ namespace Naringskollen.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "90cc432c-f9a7-4b24-ad6c-8fa565c0b489",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

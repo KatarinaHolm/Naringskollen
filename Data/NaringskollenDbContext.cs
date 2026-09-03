@@ -21,15 +21,7 @@ namespace Naringskollen.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-
-            builder.Entity<IdentityRole<int>>().HasData(
-                new IdentityRole<int>
-                {
-                    Id = 1,
-                    Name = "Admin",
-                    NormalizedName = "ADMIN"
-                });
-
+            
             builder.Entity<Category>().HasData(
                 new Category
                 {
@@ -69,12 +61,12 @@ namespace Naringskollen.Data
                 new Category
                 {
                     Id = 8,
-                    Name = "Fetter, oljor & såser"
+                    Name = "Fetter & oljor"
                 },
                 new Category
                 {
                     Id = 9,
-                    Name = "Färdiga rätter & snabbmat"
+                    Name = "Färdiga rätter, såser & snabbmat"
                 },
                 new Category
                 {
@@ -89,7 +81,7 @@ namespace Naringskollen.Data
                 new Category
                 {
                     Id = 12,
-                    Name = "Skafferi & kryddor"
+                    Name = "Skafferi, smaksättare & kryddor"
                 }
             );
         }
