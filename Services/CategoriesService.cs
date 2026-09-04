@@ -1,6 +1,6 @@
 ﻿namespace Naringskollen.Services
 {
-    public class SystemFoodService
+    public class CategoriesService
     {
     }
 }
