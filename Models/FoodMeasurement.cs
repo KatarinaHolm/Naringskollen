@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Naringskollen.Models
 {
@@ -9,11 +10,13 @@ namespace Naringskollen.Models
 
         [Required]
         [StringLength(100)]
+        [JsonPropertyName("Enhet")]
         public string UnitName { get; set; }
 
         [Required]
         [Range(0, 1000)]
-        [Precision(5, 2)]
+        [Precision(6, 2)]
+        [JsonPropertyName("Gram")]
         public decimal GramWeight { get; set; }
 
         [Required]

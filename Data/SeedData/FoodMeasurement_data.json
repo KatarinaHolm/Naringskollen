@@ -1,0 +1,5444 @@
+[
+  {
+    "Livsmedelsnamn": "Kokosfett fullhärdat",
+    "FoodId": 4,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Flytande margarin fett 82% berikad typ Milda culinesse",
+    "FoodId": 10,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Hushållsmargarin fett 80% berikad typ Melba",
+    "FoodId": 12,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Hushållsmargarin fett ca 80% berikad typ Milda",
+    "FoodId": 13,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Majonnäs fett 90% hemlagad",
+    "FoodId": 21,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Sesamsås m. grädde",
+    "FoodId": 22,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gravlaxsås hovmästarsås hemlagad",
+    "FoodId": 23,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gravlaxsås kylvara",
+    "FoodId": 24,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Remouladsås",
+    "FoodId": 25,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dressing vinägrett fett 45%",
+    "FoodId": 26,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Smör fett 80%",
+    "FoodId": 29,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Smör extrasaltat fett 80%",
+    "FoodId": 30,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Smör osaltat fett ca 80%",
+    "FoodId": 31,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Druvkärnolja",
+    "FoodId": 33,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Majsolja",
+    "FoodId": 34,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Olivolja",
+    "FoodId": 35,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Tistelolja",
+    "FoodId": 37,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Sesamolja",
+    "FoodId": 38,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Sojaolja",
+    "FoodId": 39,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Solrosolja",
+    "FoodId": 40,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Vetegroddsolja",
+    "FoodId": 41,
+    "Enhet": "dl",
+    "Gram": 92
+  },
+  {
+    "Livsmedelsnamn": "Dressing konserv. fett ca 25%",
+    "FoodId": 42,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dressing till sallad m. majonnäs fett ca 25% kylvara",
+    "FoodId": 45,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dressing fett 0%",
+    "FoodId": 49,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Majonnäs fett 80%",
+    "FoodId": 50,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Majonnäs lätt fett 30%",
+    "FoodId": 53,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Bearnaisesås hemlagad",
+    "FoodId": 58,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Hollandaisesås hemlagad",
+    "FoodId": 59,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Rhode Islandsås hemlagad",
+    "FoodId": 60,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dressing vinägrett fett 65%",
+    "FoodId": 62,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Bearnaisesås tillagad frysvara el. pulver",
+    "FoodId": 63,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Hollandaisesås tillagad frysvara el. pulver",
+    "FoodId": 64,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Mesost fett ca 30%",
+    "FoodId": 66,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 10%",
+    "FoodId": 77,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 23%",
+    "FoodId": 78,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 26%",
+    "FoodId": 79,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 38%",
+    "FoodId": 80,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 17%",
+    "FoodId": 95,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 28%",
+    "FoodId": 96,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost fett 31%",
+    "FoodId": 97,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost parmesan fett 30% typ Parmiggiano Reggiano",
+    "FoodId": 103,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost parmesan fett 30% typ Parmiggiano Reggiano",
+    "FoodId": 103,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Bröstmjölk humanmjölk",
+    "FoodId": 113,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Filmjölk fett 3% berikad",
+    "FoodId": 114,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kondenserad mjölk konserv. fett ca 8%",
+    "FoodId": 115,
+    "Enhet": "dl",
+    "Gram": 130
+  },
+  {
+    "Livsmedelsnamn": "Kondenserad mjölk konserv. konc. m. socker fett ca 9%",
+    "FoodId": 116,
+    "Enhet": "dl",
+    "Gram": 130
+  },
+  {
+    "Livsmedelsnamn": "Mjölkpulver fett 1%",
+    "FoodId": 118,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Filmjölk långfil fett 3% berikad",
+    "FoodId": 119,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Lättfil fett 0,5% berikad",
+    "FoodId": 120,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Milkshake choklad jordgubb",
+    "FoodId": 122,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mjölk fett 3% berikad",
+    "FoodId": 123,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt naturell fett 3% berikad",
+    "FoodId": 124,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt lätt fett 0,5% berikad",
+    "FoodId": 126,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mjölk fett 4,2% typ lantmjölk",
+    "FoodId": 127,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Filmjölk A-fil fett 3% berikad",
+    "FoodId": 128,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mellanfil fett 1,5% berikad",
+    "FoodId": 130,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mjölkdryck jordgubb fett 1,5% berikad",
+    "FoodId": 133,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt naturell lätt fett 0,5% berikad",
+    "FoodId": 135,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt fett 2%",
+    "FoodId": 136,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt delikatessyoghurt fett 7%",
+    "FoodId": 137,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kefir fett 3% berikad",
+    "FoodId": 142,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt mild vanilj lätt fett 0,5% berikad",
+    "FoodId": 147,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt mild vanilj fett 2%",
+    "FoodId": 148,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mellanmjölk fett 1,5% berikad",
+    "FoodId": 150,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Lättmjölk fett 0,5% berikad",
+    "FoodId": 151,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vassle flytande",
+    "FoodId": 152,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Filbunke m. grädde",
+    "FoodId": 154,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Varm choklad m. mjölk fett 3%",
+    "FoodId": 156,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Varm choklad m. mjölk fett 1,5%",
+    "FoodId": 157,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Varm choklad m. mjölk fett 0,5%",
+    "FoodId": 158,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Smoothie m. yoghurt bär banan juice",
+    "FoodId": 160,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ströbröd malt hårt bröd fullkorn vete råg socker fibrer ca 5%",
+    "FoodId": 188,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Potatis höst rå",
+    "FoodId": 230,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis höst kokt m. salt",
+    "FoodId": 231,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis m. skal bakad u. salt",
+    "FoodId": 233,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Potatis m. skal bakad u. salt i aluminiumfolie",
+    "FoodId": 234,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Färskpotatis kokt u. salt",
+    "FoodId": 236,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Potatis konserv. u. lag",
+    "FoodId": 237,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatissoppa m. purjolök",
+    "FoodId": 262,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Jordärtskocka",
+    "FoodId": 287,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Kålrot",
+    "FoodId": 288,
+    "Enhet": "styck",
+    "Gram": 400
+  },
+  {
+    "Livsmedelsnamn": "Morot",
+    "FoodId": 289,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Palsternacka",
+    "FoodId": 290,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Pepparrot",
+    "FoodId": 291,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Rotselleri",
+    "FoodId": 292,
+    "Enhet": "styck",
+    "Gram": 500
+  },
+  {
+    "Livsmedelsnamn": "Rädisa",
+    "FoodId": 293,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Rödbeta",
+    "FoodId": 294,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Rättika",
+    "FoodId": 295,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Rotpersilja",
+    "FoodId": 296,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Majrova",
+    "FoodId": 297,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Svartrot",
+    "FoodId": 298,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Morot konserv. m. lag",
+    "FoodId": 299,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Morot konserv. u. lag",
+    "FoodId": 300,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Morotsjuice",
+    "FoodId": 301,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Jordärtskockssoppa veg.",
+    "FoodId": 304,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Morot kokt m. salt",
+    "FoodId": 305,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Morotssoppa veg.",
+    "FoodId": 307,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ärtsoppa m. morot veg.",
+    "FoodId": 308,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Jordärtskocka kokt m. salt",
+    "FoodId": 310,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Rödbeta kokt u. salt",
+    "FoodId": 316,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Borsjtj rödbetssoppa",
+    "FoodId": 317,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rödbeta inlagd u. lag",
+    "FoodId": 319,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Avokado",
+    "FoodId": 320,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Stjälkselleri",
+    "FoodId": 321,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Blomkål",
+    "FoodId": 322,
+    "Enhet": "styck",
+    "Gram": 500
+  },
+  {
+    "Livsmedelsnamn": "Broccoli",
+    "FoodId": 325,
+    "Enhet": "styck",
+    "Gram": 250
+  },
+  {
+    "Livsmedelsnamn": "Brysselkål",
+    "FoodId": 327,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Champinjon",
+    "FoodId": 333,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Fänkål",
+    "FoodId": 336,
+    "Enhet": "styck",
+    "Gram": 250
+  },
+  {
+    "Livsmedelsnamn": "Gurka",
+    "FoodId": 339,
+    "Enhet": "styck",
+    "Gram": 400
+  },
+  {
+    "Livsmedelsnamn": "Isbergssallat",
+    "FoodId": 340,
+    "Enhet": "styck",
+    "Gram": 500
+  },
+  {
+    "Livsmedelsnamn": "Kronärtskocka",
+    "FoodId": 342,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Kålrabbi",
+    "FoodId": 343,
+    "Enhet": "styck",
+    "Gram": 300
+  },
+  {
+    "Livsmedelsnamn": "Lök gul",
+    "FoodId": 344,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Majskolv",
+    "FoodId": 345,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Majskolv frysvara",
+    "FoodId": 346,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Paprika grön",
+    "FoodId": 350,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Paprika röd",
+    "FoodId": 351,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Purjolök",
+    "FoodId": 354,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Rödkål",
+    "FoodId": 355,
+    "Enhet": "styck",
+    "Gram": 1000
+  },
+  {
+    "Livsmedelsnamn": "Savojkål",
+    "FoodId": 357,
+    "Enhet": "styck",
+    "Gram": 500
+  },
+  {
+    "Livsmedelsnamn": "Salladskål",
+    "FoodId": 358,
+    "Enhet": "styck",
+    "Gram": 500
+  },
+  {
+    "Livsmedelsnamn": "Squash",
+    "FoodId": 362,
+    "Enhet": "styck",
+    "Gram": 300
+  },
+  {
+    "Livsmedelsnamn": "Tomat",
+    "FoodId": 364,
+    "Enhet": "styck",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Vitkål",
+    "FoodId": 370,
+    "Enhet": "styck",
+    "Gram": 1000
+  },
+  {
+    "Livsmedelsnamn": "Vitlök",
+    "FoodId": 371,
+    "Enhet": "styck",
+    "Gram": 3
+  },
+  {
+    "Livsmedelsnamn": "Aubergine",
+    "FoodId": 372,
+    "Enhet": "styck",
+    "Gram": 300
+  },
+  {
+    "Livsmedelsnamn": "Chilipeppar färsk",
+    "FoodId": 380,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Paprika gul",
+    "FoodId": 381,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Paprika grön gul röd",
+    "FoodId": 392,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Sparrissoppa tillagad redd konserv. veg.",
+    "FoodId": 405,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tomat hel konserv. m. lag",
+    "FoodId": 407,
+    "Enhet": "styck",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Tomatjuice konserv. drickf.",
+    "FoodId": 408,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fefferoni konserv. inlagd",
+    "FoodId": 423,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksjuice konserv. el. pastöriserad drickf.",
+    "FoodId": 427,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsakssoppa klar veg.",
+    "FoodId": 430,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Spenatsoppa veg. hemlagad",
+    "FoodId": 431,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönkålssoppa",
+    "FoodId": 437,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsakssoppa redd ängamat veg.",
+    "FoodId": 438,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Nässelsoppa",
+    "FoodId": 450,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Paprika förvälld",
+    "FoodId": 451,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Purjolök kokt m. salt",
+    "FoodId": 452,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Vitkålssoppa tillagad veg.",
+    "FoodId": 464,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Aubergine kokt m. salt",
+    "FoodId": 469,
+    "Enhet": "styck",
+    "Gram": 300
+  },
+  {
+    "Livsmedelsnamn": "Aubergine stekt m. olja el. flytande margarin salt",
+    "FoodId": 470,
+    "Enhet": "styck",
+    "Gram": 300
+  },
+  {
+    "Livsmedelsnamn": "Ärtpurésoppa gröna ärtor tillagad veg.",
+    "FoodId": 473,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsakssoppa m. pasta tillagad pulver",
+    "FoodId": 480,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Löksoppa fransk tillagad pulver m. vatten",
+    "FoodId": 481,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsakssoppa tillagad klar konserv.",
+    "FoodId": 482,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsakssoppa tillagad redd pulver m. vatten mjölk",
+    "FoodId": 484,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsakssoppa tillagad redd pulver",
+    "FoodId": 486,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kronärtskocka kokt",
+    "FoodId": 492,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Champinjonsoppa tillagad pulver m. vatten mjölk",
+    "FoodId": 493,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Champinjonsoppa tillagad redd m. mjölk konserv.",
+    "FoodId": 494,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Majskolv kokt",
+    "FoodId": 495,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Blomkålssoppa tillagad pulver m. vatten mjölk",
+    "FoodId": 496,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tomatsoppa tillagad pulver m. vatten",
+    "FoodId": 497,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tomatsoppa tillagad konserv. m. vatten mjölk",
+    "FoodId": 498,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sparrissoppa tillagad pulver m. vatten mjölk veg.",
+    "FoodId": 499,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksjuice fermenterad",
+    "FoodId": 503,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vitkålssoppa m. fläskkorv hemlagad",
+    "FoodId": 505,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Minestronesoppa",
+    "FoodId": 506,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vitkålssoppa m. frikadeller",
+    "FoodId": 508,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Granatäpple",
+    "FoodId": 520,
+    "Enhet": "styck",
+    "Gram": 175
+  },
+  {
+    "Livsmedelsnamn": "Grapefrukt",
+    "FoodId": 521,
+    "Enhet": "styck",
+    "Gram": 300
+  },
+  {
+    "Livsmedelsnamn": "Guava",
+    "FoodId": 522,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Jordgubbar",
+    "FoodId": 526,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Honungsmelon",
+    "FoodId": 546,
+    "Enhet": "styck",
+    "Gram": 1000
+  },
+  {
+    "Livsmedelsnamn": "Nätmelon",
+    "FoodId": 547,
+    "Enhet": "styck",
+    "Gram": 1000
+  },
+  {
+    "Livsmedelsnamn": "Vattenmelon",
+    "FoodId": 549,
+    "Enhet": "styck",
+    "Gram": 2500
+  },
+  {
+    "Livsmedelsnamn": "Ananas",
+    "FoodId": 550,
+    "Enhet": "styck",
+    "Gram": 1000
+  },
+  {
+    "Livsmedelsnamn": "Apelsin",
+    "FoodId": 551,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Aprikos",
+    "FoodId": 552,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Banan",
+    "FoodId": 553,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Cherimoya",
+    "FoodId": 558,
+    "Enhet": "styck",
+    "Gram": 250
+  },
+  {
+    "Livsmedelsnamn": "Citron",
+    "FoodId": 559,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Småcitrus clementin mandarin tangerin satsumas",
+    "FoodId": 560,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Fikon",
+    "FoodId": 561,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Kaktusfikon",
+    "FoodId": 564,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kiwi grön",
+    "FoodId": 565,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Physalis",
+    "FoodId": 567,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kumquat",
+    "FoodId": 568,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Kvitten",
+    "FoodId": 569,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Surkörsbär",
+    "FoodId": 570,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Sötkörsbär",
+    "FoodId": 571,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Lime",
+    "FoodId": 572,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Mango",
+    "FoodId": 574,
+    "Enhet": "styck",
+    "Gram": 400
+  },
+  {
+    "Livsmedelsnamn": "Banan kokbanan",
+    "FoodId": 575,
+    "Enhet": "styck",
+    "Gram": 200
+  },
+  {
+    "Livsmedelsnamn": "Nektarin",
+    "FoodId": 576,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Papaya",
+    "FoodId": 577,
+    "Enhet": "styck",
+    "Gram": 500
+  },
+  {
+    "Livsmedelsnamn": "Paradisäpple",
+    "FoodId": 578,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Passionsfrukt",
+    "FoodId": 579,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Persika",
+    "FoodId": 580,
+    "Enhet": "styck",
+    "Gram": 125
+  },
+  {
+    "Livsmedelsnamn": "Sharon",
+    "FoodId": 581,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Plommon",
+    "FoodId": 582,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Päron",
+    "FoodId": 583,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Äpple m. skal",
+    "FoodId": 588,
+    "Enhet": "styck",
+    "Gram": 125
+  },
+  {
+    "Livsmedelsnamn": "Äpple u. skal",
+    "FoodId": 589,
+    "Enhet": "styck",
+    "Gram": 125
+  },
+  {
+    "Livsmedelsnamn": "Aprikos torkad",
+    "FoodId": 599,
+    "Enhet": "styck",
+    "Gram": 8
+  },
+  {
+    "Livsmedelsnamn": "Dadlar torkade",
+    "FoodId": 603,
+    "Enhet": "styck",
+    "Gram": 8
+  },
+  {
+    "Livsmedelsnamn": "Fikon torkade",
+    "FoodId": 604,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Katrinplommon torkade",
+    "FoodId": 605,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Persika torkad",
+    "FoodId": 608,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Päron torkade",
+    "FoodId": 609,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Äpple torkat",
+    "FoodId": 611,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Aprikos konserv. m. juice",
+    "FoodId": 618,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Aprikos konserv. m. sockerlag",
+    "FoodId": 619,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Persika konserv. m. sockerlag",
+    "FoodId": 625,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Plommon konserv. m. sockerlag",
+    "FoodId": 626,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Päron konserv. m. lättsockrad lag",
+    "FoodId": 627,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Päron konserv. m. sockerlag",
+    "FoodId": 628,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Grapefrukt konserv. m. lättsockrad lag",
+    "FoodId": 630,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mandarin konserv. m. lättsockrad lag",
+    "FoodId": 633,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Apelsinjuice färskpressad",
+    "FoodId": 641,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Apelsinjuice konc. frysvara",
+    "FoodId": 642,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Apelsinjuice drickf.",
+    "FoodId": 643,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Citronjuice färskpressad",
+    "FoodId": 645,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Citronjuice konc. konserv.",
+    "FoodId": 646,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Småcitrusjuice färskpressad",
+    "FoodId": 647,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grapefruktjuice färskpressad",
+    "FoodId": 649,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Limejuice färskpressad",
+    "FoodId": 652,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Limejuice konc. konserv.",
+    "FoodId": 657,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Druvjuice konserv. drickf.",
+    "FoodId": 658,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äppeljuice drickf.",
+    "FoodId": 659,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ananasjuice konserv. drickf.",
+    "FoodId": 660,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Apelsinjuice pastöriserad drickf.",
+    "FoodId": 661,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Juice",
+    "FoodId": 662,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Aprikosnektar pastöriserad drickf.",
+    "FoodId": 664,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Persikonektar pastöriserad drickf.",
+    "FoodId": 665,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Katrinplommondryck konserv. drickf.",
+    "FoodId": 670,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havredryck choklad fett 1,5% berikad",
+    "FoodId": 672,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havredryck fett 1,5% berikad",
+    "FoodId": 700,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rismjöl vitt",
+    "FoodId": 810,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sojamjöl fett ca 20%",
+    "FoodId": 906,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sojadryck",
+    "FoodId": 907,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sojasås",
+    "FoodId": 909,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Sojasås söt",
+    "FoodId": 910,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Häst hamburgerkött rökt",
+    "FoodId": 998,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Nöt saltkött rimmat kokt",
+    "FoodId": 999,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Nöt kött rökt",
+    "FoodId": 1000,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ren stek varmrökt",
+    "FoodId": 1001,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Gris kassler kotlettrad rökt",
+    "FoodId": 1006,
+    "Enhet": "skiva",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Gris skinka lufttorkad italiensk",
+    "FoodId": 1008,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Gris skinka rökt fett 6%",
+    "FoodId": 1009,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Gris skinka skivad rökt fett 1-3%",
+    "FoodId": 1010,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Ägg rått",
+    "FoodId": 1225,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Äggula rå",
+    "FoodId": 1226,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Äggvita rå",
+    "FoodId": 1227,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Ägg stekt",
+    "FoodId": 1233,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Leverpastej skivbar fett ca 22%",
+    "FoodId": 1475,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Leverpastej skivbar fett 14%",
+    "FoodId": 1476,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Påläggskorv medvurst fett 23%",
+    "FoodId": 1496,
+    "Enhet": "skiva",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Påläggskorv medvurst rökt fett 35%",
+    "FoodId": 1497,
+    "Enhet": "skiva",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Påläggskorv salami rökt",
+    "FoodId": 1498,
+    "Enhet": "skiva",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Cashewnötter rostade u. salt",
+    "FoodId": 1557,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Hasselnötter",
+    "FoodId": 1558,
+    "Enhet": "dl",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Jordnötssmör",
+    "FoodId": 1559,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Jordnötter torkade",
+    "FoodId": 1560,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Jordnötter rostade",
+    "FoodId": 1561,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Jordnötter rostade saltade",
+    "FoodId": 1562,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Kastanjer",
+    "FoodId": 1563,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Kokosflingor",
+    "FoodId": 1564,
+    "Enhet": "dl",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "d",
+    "FoodId": 1566,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Linfrö hela",
+    "FoodId": 1567,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Paranötter",
+    "FoodId": 1568,
+    "Enhet": "dl",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Pekannötter",
+    "FoodId": 1569,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Pistaschnötter u. salt",
+    "FoodId": 1570,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Pumpafrö",
+    "FoodId": 1571,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sesamfrö m. skal",
+    "FoodId": 1572,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sesamfrö u. skal",
+    "FoodId": 1573,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Solrosfrö",
+    "FoodId": 1574,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sötmandel",
+    "FoodId": 1575,
+    "Enhet": "dl",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Valnötter",
+    "FoodId": 1576,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Kastanjer rostade",
+    "FoodId": 1577,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Vatten kokosvatten",
+    "FoodId": 1591,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sesamdryck vattenextrakt av frön m. skal",
+    "FoodId": 1592,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sesamdryck vattenextrakt av frön u. skal",
+    "FoodId": 1593,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd kanelbulle hembakad",
+    "FoodId": 1594,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Skorpor råg",
+    "FoodId": 1595,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Skorpor vete osötade",
+    "FoodId": 1597,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd",
+    "FoodId": 1598,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd slätt",
+    "FoodId": 1599,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd sötat m. fruktsocker",
+    "FoodId": 1600,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vetebröd osötat",
+    "FoodId": 1601,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd m. fyllning bulle längd",
+    "FoodId": 1602,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Skorpor vete",
+    "FoodId": 1603,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Skorpor fullkorn osötade",
+    "FoodId": 1604,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Mandelkubb",
+    "FoodId": 1605,
+    "Enhet": "styck",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Munk u. fyllning",
+    "FoodId": 1606,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Munk fylld m. äppelmos vaniljkräm",
+    "FoodId": 1607,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Wienerbröd m. vaniljkräm sylt florsocker",
+    "FoodId": 1608,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd bakpulver",
+    "FoodId": 1609,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd saffransbröd hembakad",
+    "FoodId": 1610,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Kex cream crackers",
+    "FoodId": 1611,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex rån m. cremefyllning smaksatt",
+    "FoodId": 1612,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Kex havrekex fullkorn",
+    "FoodId": 1613,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Kex Mariekex",
+    "FoodId": 1614,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex mördegskex",
+    "FoodId": 1615,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Kex m. syltfyllning",
+    "FoodId": 1616,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Kex m. nougatfyllning",
+    "FoodId": 1617,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Maräng m. choklad",
+    "FoodId": 1618,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Småkakor olika sorter",
+    "FoodId": 1619,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Jitterbugg m. mördeg maräng",
+    "FoodId": 1620,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Cookie amerikansk m. choklad",
+    "FoodId": 1621,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Kex smörgåskex",
+    "FoodId": 1623,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Pepparkaka",
+    "FoodId": 1624,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Spettekaka",
+    "FoodId": 1625,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Maräng",
+    "FoodId": 1626,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Kex m. fyllning",
+    "FoodId": 1627,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Kex ostkex",
+    "FoodId": 1628,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex salta",
+    "FoodId": 1629,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex salta m. mjölk",
+    "FoodId": 1630,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex u. socker",
+    "FoodId": 1631,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Pepparkaka u. socker",
+    "FoodId": 1632,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex smörgåsrån",
+    "FoodId": 1633,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Glasstrut våffla ofylld",
+    "FoodId": 1636,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Småkakor u. socker",
+    "FoodId": 1637,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Mandelbiskvi",
+    "FoodId": 1638,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Deg mördeg gräddad",
+    "FoodId": 1639,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Deg smördeg gräddad",
+    "FoodId": 1640,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Deg smördeg frysvara",
+    "FoodId": 1641,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Deg filodeg kylvara el. frysvara",
+    "FoodId": 1642,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Gräddtårta",
+    "FoodId": 1645,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Toscabit m. mazarinmassa mandel choklad",
+    "FoodId": 1646,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Bärtårta m. grädde vaniljkräm sylt gele",
+    "FoodId": 1647,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Prinsesstårta m. grädde vaniljkräm hallonsylt marsipan",
+    "FoodId": 1648,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chokladtårta Sachertårta",
+    "FoodId": 1649,
+    "Enhet": "styck",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Frukttårta m. hallonsylt vaniljkräm mandelmassa frukt gele",
+    "FoodId": 1651,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chokladbiskvi m. mandelbotten smörkräm choklad",
+    "FoodId": 1652,
+    "Enhet": "styck",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Mazariner m. mördegsbotten mazarinfyllning glasyr",
+    "FoodId": 1653,
+    "Enhet": "styck",
+    "Gram": 55
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka drömtårta chokladrulltårta",
+    "FoodId": 1654,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka rulltårta m. sylt",
+    "FoodId": 1655,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Punschrulle",
+    "FoodId": 1656,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Chokladboll",
+    "FoodId": 1657,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Gräddtårta m. jordgubb banan hemlagad",
+    "FoodId": 1658,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Potatisbakelse m. vaniljkräm smörkräm marsipan",
+    "FoodId": 1659,
+    "Enhet": "styck",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Äppelkaka m. ströbröd",
+    "FoodId": 1660,
+    "Enhet": "styck",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka drömtårta chokladrulltårta hemlagad",
+    "FoodId": 1661,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Semla vetebulle fylld m. mandelmassa vispad grädde",
+    "FoodId": 1662,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka chokladruta m. chokladglasyr riven kokos",
+    "FoodId": 1663,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka ambrosiakaka sockerkaka m. glasyr",
+    "FoodId": 1664,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Arraksboll",
+    "FoodId": 1666,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Petit-choux u. fyllning",
+    "FoodId": 1667,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Semla vetebulle fylld m. mandelmassa vispad grädde hemlagad",
+    "FoodId": 1668,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka fransk äppelkaka",
+    "FoodId": 1669,
+    "Enhet": "styck",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka toscakaka",
+    "FoodId": 1671,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka chokladkaka",
+    "FoodId": 1672,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Muffins amerikansk",
+    "FoodId": 1677,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka sockerkaka pepparkaka",
+    "FoodId": 1678,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka tårtbotten",
+    "FoodId": 1679,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka sockerkaka fin",
+    "FoodId": 1681,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka pepparkaka",
+    "FoodId": 1682,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka nötkaka",
+    "FoodId": 1683,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka sockerkaka fin mager",
+    "FoodId": 1684,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka sockerkaka saftig",
+    "FoodId": 1685,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Kex digestive fullkorn 23%",
+    "FoodId": 1686,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka fruktkaka",
+    "FoodId": 1687,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Glass glasstrut våffla m. vaniljglass daimbitar chokladöverdrag",
+    "FoodId": 1694,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Glass vaniljglass m. chokladkex",
+    "FoodId": 1695,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Glass gräddglass fett 15%",
+    "FoodId": 1696,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glass fett 12%",
+    "FoodId": 1697,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Glass lättglass fett ca 5%",
+    "FoodId": 1698,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Glass glasspinne fett ca 25%",
+    "FoodId": 1699,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Glass glasspinne m. kakaoöverdrag fett 20%",
+    "FoodId": 1700,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Glass glasspinne el. split m. isöverdrag fett ca 6%",
+    "FoodId": 1701,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Glass glasstrut fett ca 10%",
+    "FoodId": 1702,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Glass mjukglass bägare",
+    "FoodId": 1703,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Matlagningsbas m. havre fett 13%",
+    "FoodId": 1712,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gräddfil fett 12%",
+    "FoodId": 1713,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kaffegrädde fett 12%",
+    "FoodId": 1714,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vispgrädde fett 40%",
+    "FoodId": 1715,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mellangrädde fett 27%",
+    "FoodId": 1716,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Matlagningsgrädde fett 15%",
+    "FoodId": 1717,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche fett 34%",
+    "FoodId": 1719,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gräddersättning pulver fett 35%",
+    "FoodId": 1725,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Apelsinmarmelad",
+    "FoodId": 1793,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Gelé röda vinbär",
+    "FoodId": 1794,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Gelé svarta vinbär",
+    "FoodId": 1795,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Apelsinmarmelad lättsockrad lag",
+    "FoodId": 1796,
+    "Enhet": "dl",
+    "Gram": 130
+  },
+  {
+    "Livsmedelsnamn": "Marmelad olika smaker",
+    "FoodId": 1797,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Lingonsylt",
+    "FoodId": 1798,
+    "Enhet": "dl",
+    "Gram": 130
+  },
+  {
+    "Livsmedelsnamn": "Lingonsylt sötningsm.",
+    "FoodId": 1800,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Jordgubbssylt",
+    "FoodId": 1801,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Björnbärssylt",
+    "FoodId": 1802,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Blåbärssylt",
+    "FoodId": 1803,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Hallonsylt",
+    "FoodId": 1804,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Hjortronsylt",
+    "FoodId": 1805,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Krusbärssylt",
+    "FoodId": 1806,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Körsbärssylt",
+    "FoodId": 1808,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Äppelmos",
+    "FoodId": 1809,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äppelmos lättsockrad",
+    "FoodId": 1810,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äppelmos osötad el. sötningsm.",
+    "FoodId": 1811,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Apelsinsaft konc. berikad",
+    "FoodId": 1814,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Apelsinsaft drickf. berikad",
+    "FoodId": 1815,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saft lättsockrad konc.",
+    "FoodId": 1817,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Måltidsdryck drickf.",
+    "FoodId": 1818,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saft konc.",
+    "FoodId": 1819,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saft drickf.",
+    "FoodId": 1820,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Svartvinbärssaft konc. berikad",
+    "FoodId": 1821,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saft sötningsm. konc.",
+    "FoodId": 1822,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktdryck u. kolsyra",
+    "FoodId": 1827,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Läsk",
+    "FoodId": 1828,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Läsk cola",
+    "FoodId": 1829,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Läsk light",
+    "FoodId": 1830,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Läsk cola light",
+    "FoodId": 1831,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sportdryck drickf.",
+    "FoodId": 1832,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saft sötningsm. drickf.",
+    "FoodId": 1834,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Hallonsaft drickf.",
+    "FoodId": 1837,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Svartvinbärssaft drickf. berikad",
+    "FoodId": 1838,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Lingondricka drickf. berikad",
+    "FoodId": 1840,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äppeldricka drickf. berikad",
+    "FoodId": 1841,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saft sötningsm. drickf. berikad",
+    "FoodId": 1842,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glass isglass",
+    "FoodId": 1843,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glass sorbet",
+    "FoodId": 1844,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glass isglass saftis",
+    "FoodId": 1845,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chokladdryck m. vatten",
+    "FoodId": 1846,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chokladdryck drickf.",
+    "FoodId": 1847,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Svagdricka vol. % 2,3",
+    "FoodId": 1900,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Öl lättöl vol. % 2,3",
+    "FoodId": 1901,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Öl pilsner folköl vol. % 3,5",
+    "FoodId": 1902,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Cider vol. % 1",
+    "FoodId": 1903,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vin vitt vol. % 11",
+    "FoodId": 1904,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vin rött el. rosé vol. % 11",
+    "FoodId": 1905,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Öl starköl el. exportöl vol. % 5,4",
+    "FoodId": 1906,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vin rött vol. % 14",
+    "FoodId": 1907,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vin vitt vol. % 12",
+    "FoodId": 1908,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vin vitt el. rhenvin vol. % 10",
+    "FoodId": 1909,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glögg vin vol. % 10",
+    "FoodId": 1912,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Starkvin vol. % 18 typ Madeira",
+    "FoodId": 1914,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Starkvin vitt rött vol. % 20 typ Portvin",
+    "FoodId": 1915,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Starkvin halvtorr vol. % 17 typ Sherry",
+    "FoodId": 1916,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glögg starkvin vol. % 16",
+    "FoodId": 1917,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brännvin renat el. vodka vol. % 40",
+    "FoodId": 1918,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Likör söt vol. % 24",
+    "FoodId": 1919,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Likör Kaptenlöjtnant vol. % 38",
+    "FoodId": 1920,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Konjak el. brandy vol. % 40",
+    "FoodId": 1921,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Punsch vol. % 26",
+    "FoodId": 1922,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rom vol. % 40",
+    "FoodId": 1923,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brännvin kryddat vol. % 40",
+    "FoodId": 1924,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gin vol. % 40",
+    "FoodId": 1925,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Whisky vol. % 40",
+    "FoodId": 1926,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Likör mindre söt vol. % 24",
+    "FoodId": 1927,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kaffedrink Irish coffee m.whiskey vispad grädde",
+    "FoodId": 1929,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Bovetemjöl",
+    "FoodId": 1930,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Havremust pulver",
+    "FoodId": 1931,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Kornmjöl fullkorn",
+    "FoodId": 1932,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Majsmjöl gult u. groddar",
+    "FoodId": 1933,
+    "Enhet": "dl",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Rågmjöl fullkorn",
+    "FoodId": 1934,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vetemjöl fullkorn grahamsmjöl",
+    "FoodId": 1935,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vetediet berikad",
+    "FoodId": 1936,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vetemjöl bagerivetemjöl",
+    "FoodId": 1938,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vetemjöl",
+    "FoodId": 1941,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Majsstärkelse",
+    "FoodId": 1945,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Potatismjöl",
+    "FoodId": 1946,
+    "Enhet": "dl",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Vatten sodavatten",
+    "FoodId": 1949,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vatten vichyvatten",
+    "FoodId": 1950,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vatten mineralvatten",
+    "FoodId": 1951,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vatten kranvatten",
+    "FoodId": 1953,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Snabbkaffe pulver",
+    "FoodId": 1955,
+    "Enhet": "dl",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Snabbkaffe drickf.",
+    "FoodId": 1956,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kaffe bryggt",
+    "FoodId": 1957,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kaffe espresso bryggt drickf.",
+    "FoodId": 1958,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Snabbkaffe koffeinfritt drickf.",
+    "FoodId": 1959,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tepulver",
+    "FoodId": 1960,
+    "Enhet": "dl",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Te bryggt",
+    "FoodId": 1962,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Örtte drickf.",
+    "FoodId": 1963,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Nyponte drickf. m. svarta vinbär",
+    "FoodId": 1964,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ättiksprit ättiksyra 12%",
+    "FoodId": 1965,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vinäger ättiksyra 7%",
+    "FoodId": 1966,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äppelcidervinäger ättiksyra 7%",
+    "FoodId": 1967,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chilisås tomat",
+    "FoodId": 1968,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Ketchup",
+    "FoodId": 1969,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Engelsk brown sauce HP-sås",
+    "FoodId": 1970,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Grillsås",
+    "FoodId": 1971,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Senap svensk",
+    "FoodId": 1972,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Senap fransk",
+    "FoodId": 1973,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sötsur sås",
+    "FoodId": 1974,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Salt m. jod",
+    "FoodId": 1975,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Salt mineralsalt",
+    "FoodId": 1976,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Salt havssalt u. jod",
+    "FoodId": 1977,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Salt örtsalt",
+    "FoodId": 1978,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Jäst färsk",
+    "FoodId": 1979,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Jäst torkad",
+    "FoodId": 1980,
+    "Enhet": "styck",
+    "Gram": 12
+  },
+  {
+    "Livsmedelsnamn": "Bakpulver",
+    "FoodId": 1981,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Béchamelsås m. lättmjölk grädde",
+    "FoodId": 1982,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ljus sås m. mjölk",
+    "FoodId": 1983,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ljus sås m. buljong grädde",
+    "FoodId": 1984,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Béchamelsås",
+    "FoodId": 1985,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gratängsås u. ost hemlagad",
+    "FoodId": 1986,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ljus sås m. grädde",
+    "FoodId": 1987,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostsås",
+    "FoodId": 1988,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostsås m. ädelost",
+    "FoodId": 1989,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostsås till moussaka",
+    "FoodId": 1990,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brunsås m. mjölk",
+    "FoodId": 1991,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sky",
+    "FoodId": 1992,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brunsås m. buljong grädde",
+    "FoodId": 1993,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brunsås m. buljong",
+    "FoodId": 1994,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Currysås hemlagad",
+    "FoodId": 1995,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brunsås m. kaffegrädde",
+    "FoodId": 1996,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Korintsås",
+    "FoodId": 1997,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brunsås tillagad pulver m. mjölk vatten",
+    "FoodId": 1998,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gräddsås tillagad pulver m. mjölk vatten smör",
+    "FoodId": 1999,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tomatsås kryddstark",
+    "FoodId": 2000,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dillsås",
+    "FoodId": 2001,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äggsås m. persilja",
+    "FoodId": 2002,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Pesto hemlagad",
+    "FoodId": 2003,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Pesto m. basilika pinjenötter cashewnötter",
+    "FoodId": 2004,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dippmix pulver olika smaker",
+    "FoodId": 2006,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Sweet chilisås",
+    "FoodId": 2007,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Pastasås m. tomat örtkryddor",
+    "FoodId": 2008,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Pastasås m. basilika",
+    "FoodId": 2009,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sötsur sås m. grönsaker konserv.",
+    "FoodId": 2010,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Orientalisk sås m. grönsaker konserv.",
+    "FoodId": 2011,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Teriyakisås",
+    "FoodId": 2012,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Matlagningsbas fett 15%",
+    "FoodId": 2036,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Matlagningsbas fett ca 5%",
+    "FoodId": 2037,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vispgrädde ersättningsprod. mjölk olja fett 20%",
+    "FoodId": 2039,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kaffegrädde ersättningsprod. mjölk olja fett 10%",
+    "FoodId": 2040,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vaniljvisp fett 12%",
+    "FoodId": 2041,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche smaksatt fett 13%",
+    "FoodId": 2043,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche smaksatt fett 28%",
+    "FoodId": 2044,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mini fraiche fett 5%",
+    "FoodId": 2046,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Filmjölk naturell fett 4,2%",
+    "FoodId": 2048,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ris avorio okokt",
+    "FoodId": 2057,
+    "Enhet": "dl",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Lök rostad",
+    "FoodId": 2058,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Glass glasspinne m. frukt mjölk fett 5,5%",
+    "FoodId": 2059,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Glass glasspinne fett 10%",
+    "FoodId": 2060,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Matlagningsbas m. soja fett 17%",
+    "FoodId": 2070,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Jordnötssås",
+    "FoodId": 2073,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Coleslaw hemlagad",
+    "FoodId": 2075,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Löksås m. grädde",
+    "FoodId": 2078,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Nudlar äggnudlar kokta m. salt",
+    "FoodId": 2079,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Nässlor stuvade",
+    "FoodId": 2080,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kantarell stuvad",
+    "FoodId": 2081,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gryta ratatouille veg.",
+    "FoodId": 2083,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostsås m. skinka hemlagad",
+    "FoodId": 2142,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tzatziki",
+    "FoodId": 2144,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rapsolja",
+    "FoodId": 2189,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Matfettsblandning fett 75% berikad",
+    "FoodId": 2190,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Lättmargarin fett 39% berikad typ Lätta",
+    "FoodId": 2192,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Äggröra",
+    "FoodId": 2197,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ägg kokt",
+    "FoodId": 2205,
+    "Enhet": "styck",
+    "Gram": 55
+  },
+  {
+    "Livsmedelsnamn": "Pepparkaka glutenfri",
+    "FoodId": 2222,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Kex digestive fullkorn glutenfri",
+    "FoodId": 2223,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Hårt bröd glutenfritt fibrer ca 7,5% berikad typ grovknäcke",
+    "FoodId": 2225,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Bearnaisesås fett 8%",
+    "FoodId": 2228,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Klassisk gräddsås fett 6%",
+    "FoodId": 2229,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostsås fett 8%",
+    "FoodId": 2230,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Bearnaisesås fett ca 40%",
+    "FoodId": 2231,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rödvinssås fett 1,5%",
+    "FoodId": 2232,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kebabsås vit fett 30%",
+    "FoodId": 2233,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Svampsås fett 8,5%",
+    "FoodId": 2234,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Påläggskorv salami mager",
+    "FoodId": 2240,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Fruktdryck nypon blåbär berikad",
+    "FoodId": 2301,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Energidryck m. socker berikad",
+    "FoodId": 2302,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Öl alkoholfri",
+    "FoodId": 2305,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Flytande margarin mjölkfri fett 80% berikad",
+    "FoodId": 2401,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Flytande margarin fett 76% berikad typ Becel",
+    "FoodId": 2474,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Litchi",
+    "FoodId": 2569,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Carambole stjärnfrukt",
+    "FoodId": 2570,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Béchamelsås m. mjölk fett 3% grädde",
+    "FoodId": 2756,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Caffe latte",
+    "FoodId": 2816,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Café au lait",
+    "FoodId": 2818,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Cappuccino",
+    "FoodId": 2819,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ost halloumi stekt eller grillad",
+    "FoodId": 2899,
+    "Enhet": "skiva",
+    "Gram": 25
+  },
+  {
+    "Livsmedelsnamn": "Gräddsås",
+    "FoodId": 2965,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Skaldjurssås",
+    "FoodId": 2969,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Dressing hamburgerdressing",
+    "FoodId": 2973,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gulaschsoppa",
+    "FoodId": 2977,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fisksoppa skaldjurssoppa u. vin",
+    "FoodId": 2982,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Muffins hembakad",
+    "FoodId": 3055,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Chokladmuffins hembakad",
+    "FoodId": 3056,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Sesamkakor sesamkex",
+    "FoodId": 3059,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Brända mandlar",
+    "FoodId": 3064,
+    "Enhet": "dl",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Chilinötter",
+    "FoodId": 3069,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Pinjefrö",
+    "FoodId": 3071,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Nötter blandade rostade m. salt",
+    "FoodId": 3139,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Nötter blandade naturella",
+    "FoodId": 3140,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Kvarg naturell fett 0,2%",
+    "FoodId": 3243,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Nötter blandade m. frukt bär",
+    "FoodId": 3258,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Nötter blandade kanderade",
+    "FoodId": 3262,
+    "Enhet": "dl",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Jordgubbssylt lättsockrad",
+    "FoodId": 3281,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Matolja",
+    "FoodId": 3418,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Linfröolja",
+    "FoodId": 3433,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Bulgur kokt u. salt fullkorn",
+    "FoodId": 3564,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Sojadryck berikad",
+    "FoodId": 3668,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Soygurt smaksatt eko. berikad",
+    "FoodId": 3710,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saftglögg",
+    "FoodId": 3733,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Couscous kokt m. salt fullkorn",
+    "FoodId": 3752,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Pasta kokt m. salt",
+    "FoodId": 3756,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Sötpotatis rå",
+    "FoodId": 3765,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Dinkelmjöl fullkorn",
+    "FoodId": 3786,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Bröd rågsikt fibrer ca 7%",
+    "FoodId": 3790,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt fibrer ca 5% typ formfranska",
+    "FoodId": 3791,
+    "Enhet": "skiva",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Hårt bröd fullkorn råg fibrer ca 19% typ Rågi",
+    "FoodId": 3793,
+    "Enhet": "skiva",
+    "Gram": 12
+  },
+  {
+    "Livsmedelsnamn": "Bröd fullkorn vete råg fibrer ca 6%",
+    "FoodId": 3794,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt fibrer ca 5% typ limpa",
+    "FoodId": 3795,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Bröd fullkorn råg fibrer ca 7%",
+    "FoodId": 3797,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Korvbröd grovt",
+    "FoodId": 3798,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Hamburgerbröd",
+    "FoodId": 3818,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt mjölk fibrer ca 4% typ tekaka",
+    "FoodId": 3819,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Hamburgerbröd grovt",
+    "FoodId": 3825,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Pasta kokt m. salt fullkorn>50%",
+    "FoodId": 3828,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Ägg rått eko.",
+    "FoodId": 3840,
+    "Enhet": "styck",
+    "Gram": 55
+  },
+  {
+    "Livsmedelsnamn": "Äggula rå eko.",
+    "FoodId": 3841,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Dinkel speltvete kokt m. salt",
+    "FoodId": 3845,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Muffins m. frukt bär",
+    "FoodId": 3848,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Kycklingröra hemlagad",
+    "FoodId": 3852,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Smoothie m. frukt bär u. mjölk",
+    "FoodId": 3855,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chai latte",
+    "FoodId": 4057,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Hampafröolja",
+    "FoodId": 4074,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Potatis Hasselbackspotatis bakad",
+    "FoodId": 4128,
+    "Enhet": "styck",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Palmolja",
+    "FoodId": 4131,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Ägg stekt eko.",
+    "FoodId": 4134,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Ägg kokt eko.",
+    "FoodId": 4135,
+    "Enhet": "styck",
+    "Gram": 55
+  },
+  {
+    "Livsmedelsnamn": "Crème fraichesås m. örtkryddor",
+    "FoodId": 4140,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Majskolv stekt grillad",
+    "FoodId": 4157,
+    "Enhet": "styck",
+    "Gram": 150
+  },
+  {
+    "Livsmedelsnamn": "Potatis Solist rå",
+    "FoodId": 4385,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis Swift rå",
+    "FoodId": 4386,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis Solist kokt m. salt",
+    "FoodId": 4415,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis Swift kokt m. salt",
+    "FoodId": 4416,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis Asterix rå",
+    "FoodId": 4445,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Nudlar risnudlar okokta",
+    "FoodId": 4447,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Nudlar risnudlar kokta",
+    "FoodId": 4448,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Havtorn",
+    "FoodId": 4456,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Potatis rå",
+    "FoodId": 4457,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis kokt m. salt",
+    "FoodId": 4458,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis färsk kokt m. salt",
+    "FoodId": 4511,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Potatis färsk rå",
+    "FoodId": 4512,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Potatis Inova rå",
+    "FoodId": 4513,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis King Edward rå",
+    "FoodId": 4514,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis mandelpotatis rå",
+    "FoodId": 4515,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Potatis kokt m. salt tillagad i storhushåll",
+    "FoodId": 4516,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis Asterix kokt m. salt",
+    "FoodId": 4518,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis Inova kokt m. salt",
+    "FoodId": 4519,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis King Edward kokt m. salt",
+    "FoodId": 4520,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Potatis mandelpotatis kokt m. salt",
+    "FoodId": 4521,
+    "Enhet": "styck",
+    "Gram": 65
+  },
+  {
+    "Livsmedelsnamn": "Ris rundkornigt kokt m. salt",
+    "FoodId": 4591,
+    "Enhet": "dl",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Pilgrimsmussla",
+    "FoodId": 4600,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Olivolja extra jungfruolja",
+    "FoodId": 4659,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Rapsolja kallpressad",
+    "FoodId": 4661,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Flytande matfettsblandning fett 80% berikad typ Arla smör- och rapsolja",
+    "FoodId": 4662,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Pastasås m. tonfisk curry",
+    "FoodId": 4736,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tomat körsbärstomat röd",
+    "FoodId": 4937,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Tomat torkad m. olja avrunnen",
+    "FoodId": 4938,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Broccoli kokt u. salt frysvara",
+    "FoodId": 4939,
+    "Enhet": "dl",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Lök röd",
+    "FoodId": 4947,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Julmust påskmust",
+    "FoodId": 5147,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Slush drickf.",
+    "FoodId": 5149,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mandeldryck berikad",
+    "FoodId": 5150,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Alkoläsk kolsyrad dryck vol. % 4-5",
+    "FoodId": 5152,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Potatis kokt u. salt",
+    "FoodId": 5153,
+    "Enhet": "styck",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Pepparsås",
+    "FoodId": 5218,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Saffransris",
+    "FoodId": 5305,
+    "Enhet": "dl",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Ljus sås till fiskgratäng",
+    "FoodId": 5338,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Toast m. ost skinka",
+    "FoodId": 5574,
+    "Enhet": "styck",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Naturgodis olika sorter",
+    "FoodId": 5606,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Pastagratäng m. kyckling",
+    "FoodId": 5665,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tomatsås till pizza hemlagad",
+    "FoodId": 5726,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Minimjölk fett < 0,1% berikad",
+    "FoodId": 5727,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Örtagårdssås m. gräddfil",
+    "FoodId": 5753,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Köttfärssås Bolognese m. nötfärs bacon",
+    "FoodId": 5756,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Aioli",
+    "FoodId": 5758,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Guacamole",
+    "FoodId": 5759,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Islatte smaksatt",
+    "FoodId": 5831,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Brownie",
+    "FoodId": 5833,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Sparris grön kokt m. salt",
+    "FoodId": 5861,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Äpple Aroma rött",
+    "FoodId": 5869,
+    "Enhet": "styck",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Äpple Ingrid Marie rött",
+    "FoodId": 5870,
+    "Enhet": "styck",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Äpple Frida",
+    "FoodId": 5871,
+    "Enhet": "styck",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Äpple Golden delicious Granny Smith grönt",
+    "FoodId": 5872,
+    "Enhet": "styck",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Tacosås",
+    "FoodId": 5916,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Korngryn kokt u. salt",
+    "FoodId": 5935,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Julmust light",
+    "FoodId": 5942,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havregurt naturell fett 2,2% berikad",
+    "FoodId": 5956,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fraiche m. havre veg. fett 15% berikad",
+    "FoodId": 5957,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havredryck m. apelsin mango",
+    "FoodId": 5963,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Blodpudding blodkorv tillagad",
+    "FoodId": 5968,
+    "Enhet": "skiva",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Gris sidfläsk el. stekfläsk rimmat stekt",
+    "FoodId": 5969,
+    "Enhet": "skiva",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt vetetortilla",
+    "FoodId": 5974,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Te fermenterat m. socker",
+    "FoodId": 5979,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kalkon rökt tunna skivor",
+    "FoodId": 6009,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Cashewnötter rostade m. salt",
+    "FoodId": 6053,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Drickyoghurt smaksatt fett ca 1%",
+    "FoodId": 6069,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost eko. fett 28%",
+    "FoodId": 6070,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Vaniljsås ätf.",
+    "FoodId": 6071,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt naturell eko. fett 3% berikad",
+    "FoodId": 6076,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Hårt bröd fullkorn råg fiber ca 20% typ sport",
+    "FoodId": 6081,
+    "Enhet": "skiva",
+    "Gram": 13
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt grovt m. nyckelhål typ formfranska",
+    "FoodId": 6083,
+    "Enhet": "skiva",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt typ levain",
+    "FoodId": 6084,
+    "Enhet": "skiva",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Mandelmjöl",
+    "FoodId": 6087,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Filmjölk eko. fett 3% berikad",
+    "FoodId": 6088,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kvarg drickf. olika smaker",
+    "FoodId": 6089,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kvarg smaksatt sötningsm.",
+    "FoodId": 6090,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kvarg smaksatt m. socker",
+    "FoodId": 6091,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Drickyoghurt smaksatt fett ca 1% socker ca 8%",
+    "FoodId": 6092,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Drickyoghurt smaksatt fett ca 1% socker ca 11%",
+    "FoodId": 6093,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Frukostflingor fullkorn berikad typ Specialflingor",
+    "FoodId": 6110,
+    "Enhet": "dl",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt naturell fett 10%",
+    "FoodId": 6113,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Noni fruktpuré",
+    "FoodId": 6131,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fisk Bordelaise",
+    "FoodId": 6132,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostkräm",
+    "FoodId": 6133,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äppeljuice konc.",
+    "FoodId": 6134,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Matvete kokt m. salt",
+    "FoodId": 6145,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Mathavre kokt m. salt",
+    "FoodId": 6146,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Psylliumfröskal",
+    "FoodId": 6154,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Chiafrö",
+    "FoodId": 6157,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Hampafrö m. skal",
+    "FoodId": 6158,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Hampafrö u. skal",
+    "FoodId": 6159,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vallmofrö",
+    "FoodId": 6160,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Senap sötstark",
+    "FoodId": 6164,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kokosolja",
+    "FoodId": 6165,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Majonnäs m. sojabönolja fett 80%",
+    "FoodId": 6166,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Majonnäs m. solrosolja fett 80%",
+    "FoodId": 6167,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Dressing hamburgerdressing lätt fett 28 %",
+    "FoodId": 6336,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Majonnäs äggfri",
+    "FoodId": 6337,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Sås mango curry m. majonnäs kylvara",
+    "FoodId": 6338,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ostsås m. kalkon",
+    "FoodId": 6341,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tzatziki m. morot",
+    "FoodId": 6352,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mango currysås hemlagad",
+    "FoodId": 6353,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rödbetshummus",
+    "FoodId": 6368,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ajvaryoghurt",
+    "FoodId": 6369,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Karl-Alfredsås m. yoghurt spenat",
+    "FoodId": 6370,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gräddsås m. persilja",
+    "FoodId": 6377,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mango chutney",
+    "FoodId": 6384,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksburgare stekt veg.",
+    "FoodId": 6398,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbiff rödbetsbiff stekt veg.",
+    "FoodId": 6399,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbiff morotsbiff stekt veg.",
+    "FoodId": 6400,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbiff zucchinibiff m. ost stekt veg.",
+    "FoodId": 6401,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbiff ärt- och kålrotsbiff stekt veg. kylvara",
+    "FoodId": 6402,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbiff kikärtsbiff stekt veg. hemlagad",
+    "FoodId": 6403,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Majssås",
+    "FoodId": 6421,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Broccolisås",
+    "FoodId": 6424,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbas grönsakspasta",
+    "FoodId": 6438,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Tomatsås m. grädde",
+    "FoodId": 6439,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Morotssås",
+    "FoodId": 6440,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ajvar- och spenatsås",
+    "FoodId": 6441,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Paprika grillad",
+    "FoodId": 6442,
+    "Enhet": "styck",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chiapudding",
+    "FoodId": 6461,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havremjöl fullkorn",
+    "FoodId": 6468,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Vitlökssås m. örter hemlagad",
+    "FoodId": 6469,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kornflingor ångprep. fullkorn",
+    "FoodId": 6480,
+    "Enhet": "dl",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Rågflingor ångprep. fullkorn",
+    "FoodId": 6481,
+    "Enhet": "dl",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Veteflingor ångprep. fullkorn",
+    "FoodId": 6482,
+    "Enhet": "dl",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Dinkelmjöl",
+    "FoodId": 6494,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Grönsaksbiff jordnötsbiff tillagad veg.",
+    "FoodId": 6506,
+    "Enhet": "styck",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Vitlökssås fetthalt ca 10%",
+    "FoodId": 6514,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vetemjöl durum",
+    "FoodId": 6542,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Modersmjölksersättning",
+    "FoodId": 6552,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Tillskottsnäring för småbarn",
+    "FoodId": 6553,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mjölblandning vete korn råg havre",
+    "FoodId": 6574,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjölblandning rågsikt",
+    "FoodId": 6576,
+    "Enhet": "dl",
+    "Gram": 55
+  },
+  {
+    "Livsmedelsnamn": "Varm choklad m. veg. dryck fett ca 1,5%",
+    "FoodId": 6599,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Rapsolja berikad",
+    "FoodId": 6651,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Muskotnöt malen",
+    "FoodId": 6666,
+    "Enhet": "dl",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Fisksås",
+    "FoodId": 6675,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Durra el. andra sorghumarter mjöl",
+    "FoodId": 6676,
+    "Enhet": "dl",
+    "Gram": 55
+  },
+  {
+    "Livsmedelsnamn": "Amarant mjöl",
+    "FoodId": 6677,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Kiwi gul",
+    "FoodId": 6678,
+    "Enhet": "styck",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Sojasås shoyu",
+    "FoodId": 6682,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Chokladkex m. vaniljfyllning",
+    "FoodId": 6704,
+    "Enhet": "styck",
+    "Gram": 11
+  },
+  {
+    "Livsmedelsnamn": "Bröd rågsikt fibrer ca 4% typ rågkaka",
+    "FoodId": 6757,
+    "Enhet": "skiva",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd kanelbulle gräddad kylvara frysvara el. butiksbakad",
+    "FoodId": 6758,
+    "Enhet": "styck",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Bröd fröbröd fullkorn vete råg",
+    "FoodId": 6759,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Frukostflingor vete puffat m. choklad",
+    "FoodId": 6763,
+    "Enhet": "dl",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Frukostflingor granola m. frukt nötter",
+    "FoodId": 6764,
+    "Enhet": "dl",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Frukostflingor granola m. kakao hallon",
+    "FoodId": 6765,
+    "Enhet": "dl",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Majskaka smaksatt ost",
+    "FoodId": 6766,
+    "Enhet": "styck",
+    "Gram": 8
+  },
+  {
+    "Livsmedelsnamn": "Linskaka smaksatt",
+    "FoodId": 6767,
+    "Enhet": "styck",
+    "Gram": 8
+  },
+  {
+    "Livsmedelsnamn": "Kex bokstavskex fullkorn",
+    "FoodId": 6768,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt croissant gräddad kylvara frysvara el. butiksbakad",
+    "FoodId": 6770,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Pommes frites smaksatta frysvara",
+    "FoodId": 6780,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Frukostflingor majs typ cornflakes",
+    "FoodId": 6781,
+    "Enhet": "dl",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Ris sushiris kokt",
+    "FoodId": 6782,
+    "Enhet": "dl",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Nudlar äggnudlar kokta u. salt",
+    "FoodId": 6786,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Havregurt hallon berikad",
+    "FoodId": 6790,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havregurt blåbär hallon berikad",
+    "FoodId": 6791,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havregurt jordgubb berikad",
+    "FoodId": 6792,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havregurt vanilj berikad",
+    "FoodId": 6793,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havredryck fett 1,5% eko. berikad",
+    "FoodId": 6795,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havredryck fett 0,5 % eko. berikad",
+    "FoodId": 6797,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havregurt naturell fett 11 % berikad",
+    "FoodId": 6801,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havregurt smaksatt berikad",
+    "FoodId": 6812,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Havredryck fett 3,0% berikad",
+    "FoodId": 6813,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kex bokstavskex fullkorn berikad",
+    "FoodId": 6819,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Vitlökssås fetthalt ≥ 40%",
+    "FoodId": 6829,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd saffransbröd",
+    "FoodId": 6833,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjölblandning ljus glutenfri",
+    "FoodId": 6865,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Bovetemjöl grovt",
+    "FoodId": 6868,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Teffmjöl",
+    "FoodId": 6869,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Våffelmix glutenfri",
+    "FoodId": 6870,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Våffla glutenfri",
+    "FoodId": 6871,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Majsgryn polenta",
+    "FoodId": 6872,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Bröd surdegsbröd glutenfritt",
+    "FoodId": 6875,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt tortilla glutenfritt",
+    "FoodId": 6878,
+    "Enhet": "styck",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Hårt bröd m. chiafrö glutenfritt fibrer ca 10%",
+    "FoodId": 6879,
+    "Enhet": "skiva",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Hårt bröd m. sesamfrö glutenfritt fibrer ca 9%",
+    "FoodId": 6880,
+    "Enhet": "skiva",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Bröd vitt osötat glutenfritt fibrer ca 7% typ ciabatta",
+    "FoodId": 6881,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Sockerbetsfiber",
+    "FoodId": 6883,
+    "Enhet": "dl",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Kex salta glutenfritt",
+    "FoodId": 6884,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Chokladkaka chocolate chip cookie glutenfri",
+    "FoodId": 6886,
+    "Enhet": "styck",
+    "Gram": 25
+  },
+  {
+    "Livsmedelsnamn": "Sojadryck osötad berikad",
+    "FoodId": 6902,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mandeldryck osötad berikad",
+    "FoodId": 6903,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kokosnötdryck",
+    "FoodId": 6904,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Bulgur kokt m. tomat buljong olja",
+    "FoodId": 6920,
+    "Enhet": "dl",
+    "Gram": 75
+  },
+  {
+    "Livsmedelsnamn": "Munk friterad m. socker typ somalisk bur saliid",
+    "FoodId": 6924,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Majsdessert m. socker typ somalisk xalwo",
+    "FoodId": 6925,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Sött vetebröd dadelkrans m. fyllning",
+    "FoodId": 6928,
+    "Enhet": "skiva",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Mannagrynspudding m. socker typ syrisk mamonia",
+    "FoodId": 6931,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Biryani ris m. kyckling lammkött grönsaker",
+    "FoodId": 6984,
+    "Enhet": "dl",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Biryani ris m. grönsaker veg.",
+    "FoodId": 6985,
+    "Enhet": "dl",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Yoghurtsås m. tahini citron",
+    "FoodId": 6986,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Glykossirap",
+    "FoodId": 6997,
+    "Enhet": "dl",
+    "Gram": 130
+  },
+  {
+    "Livsmedelsnamn": "Näringsjäst",
+    "FoodId": 6998,
+    "Enhet": "dl",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Havreris kokt m. salt",
+    "FoodId": 6999,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Lakritsgodis",
+    "FoodId": 7000,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Hirs kokt m. salt",
+    "FoodId": 7006,
+    "Enhet": "dl",
+    "Gram": 70
+  },
+  {
+    "Livsmedelsnamn": "Kokosbaserad bit riven fett ca 20% som alternativ till ost",
+    "FoodId": 7011,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Kokosbaserad bit fett ca 20% som alternativ till ost",
+    "FoodId": 7012,
+    "Enhet": "skiva",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Korv kryddkorv kött ca 75%",
+    "FoodId": 7015,
+    "Enhet": "styck",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Dippsås m. gräddfil dippmix",
+    "FoodId": 7016,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Snabbkaffe koffeinfritt pulver",
+    "FoodId": 7018,
+    "Enhet": "dl",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Mullbär",
+    "FoodId": 7019,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Te fermenterat m. fruktjuice",
+    "FoodId": 7020,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Te fermenterat m. sötningsm.",
+    "FoodId": 7021,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Macadamianötter",
+    "FoodId": 7024,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Mjölmålla quinoa okokt",
+    "FoodId": 7025,
+    "Enhet": "dl",
+    "Gram": 80
+  },
+  {
+    "Livsmedelsnamn": "Mjölmålla quinoa mjöl",
+    "FoodId": 7026,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Arrowrotmjöl",
+    "FoodId": 7028,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Vinblad konserv.",
+    "FoodId": 7029,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Hampamjöl avfettat",
+    "FoodId": 7030,
+    "Enhet": "dl",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Kakaosmör",
+    "FoodId": 7031,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Röd pepparsås",
+    "FoodId": 7032,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Shiitakesvamp",
+    "FoodId": 7034,
+    "Enhet": "styck",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Ostronskivling",
+    "FoodId": 7035,
+    "Enhet": "styck",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Blåbär amerikanska",
+    "FoodId": 7042,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Odon",
+    "FoodId": 7047,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Rönnbär",
+    "FoodId": 7048,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Aronia svart",
+    "FoodId": 7050,
+    "Enhet": "dl",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Aronia torkad pulver",
+    "FoodId": 7051,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Rågkli",
+    "FoodId": 7052,
+    "Enhet": "dl",
+    "Gram": 35
+  },
+  {
+    "Livsmedelsnamn": "Ärtskott",
+    "FoodId": 7053,
+    "Enhet": "dl",
+    "Gram": 15
+  },
+  {
+    "Livsmedelsnamn": "Kakaopulver fett 10-15%",
+    "FoodId": 7054,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Frityrolja",
+    "FoodId": 7066,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt fett 2% berikad",
+    "FoodId": 7087,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt fett 2,5% berikad",
+    "FoodId": 7088,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Mjuk kaka tårtbotten glutenfri",
+    "FoodId": 7091,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Soygurt smaksatt osötad berikad",
+    "FoodId": 7135,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Soygurt naturell eko. berikad",
+    "FoodId": 7136,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche fett 32%",
+    "FoodId": 7137,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche laktosfri fett 32-34%",
+    "FoodId": 7138,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche lätt fett 13%",
+    "FoodId": 7139,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Crème fraiche lätt laktosfri fett 13%",
+    "FoodId": 7140,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Ädelost blågrön mögelost fett ca 35%",
+    "FoodId": 7141,
+    "Enhet": "skiva",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Ost hårdost parmesan fett 29% typ Grana Padano",
+    "FoodId": 7142,
+    "Enhet": "skiva",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Soygurt smaksatt berikad",
+    "FoodId": 7143,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Soygurt naturell berikad Ca vitD B12 folsyra riboflavin",
+    "FoodId": 7144,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Soygurt naturell berikad Ca vitD B12",
+    "FoodId": 7145,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt smaksatt m. sötningsm. fett 0% typ grekisk yoghurt",
+    "FoodId": 7146,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt mild honung fett 2% berikad",
+    "FoodId": 7147,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt mild vanilj fett 2,7% berikad",
+    "FoodId": 7148,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Yoghurt naturell lätt laktosfri fett ca 0,4% berikad",
+    "FoodId": 7149,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Gris skinka bog konserv.",
+    "FoodId": 7150,
+    "Enhet": "skiva",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt lätt m. socker fett 0,1%",
+    "FoodId": 7152,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt lätt m. sötningsm. fett 0,1% berikad",
+    "FoodId": 7153,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt lättsötad fett 1,5% berikad",
+    "FoodId": 7154,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kanelbulle glutenfri",
+    "FoodId": 7160,
+    "Enhet": "styck",
+    "Gram": 60
+  },
+  {
+    "Livsmedelsnamn": "Muffins glutenfri",
+    "FoodId": 7161,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Kladdkaka glutenfri",
+    "FoodId": 7162,
+    "Enhet": "styck",
+    "Gram": 50
+  },
+  {
+    "Livsmedelsnamn": "Småkakor glutenfria hembakade",
+    "FoodId": 7163,
+    "Enhet": "styck",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Flytande margarin fett 70%",
+    "FoodId": 7165,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Fruktdryck m. kolsyra",
+    "FoodId": 7177,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Koriander blad",
+    "FoodId": 7193,
+    "Enhet": "dl",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Grönmynta blad",
+    "FoodId": 7194,
+    "Enhet": "dl",
+    "Gram": 10
+  },
+  {
+    "Livsmedelsnamn": "Kardemumma torkad",
+    "FoodId": 7195,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Kryddnejlika torkad malen",
+    "FoodId": 7196,
+    "Enhet": "dl",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Koriander frö torkad",
+    "FoodId": 7197,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Gurkmeja torkad",
+    "FoodId": 7198,
+    "Enhet": "dl",
+    "Gram": 45
+  },
+  {
+    "Livsmedelsnamn": "Spiskummin frö torkad",
+    "FoodId": 7199,
+    "Enhet": "dl",
+    "Gram": 40
+  },
+  {
+    "Livsmedelsnamn": "Potatismos pulver tillagat",
+    "FoodId": 7221,
+    "Enhet": "dl",
+    "Gram": 85
+  },
+  {
+    "Livsmedelsnamn": "Tomatsås till pizza konserv.",
+    "FoodId": 7232,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Drottningsylt lättsockrad",
+    "FoodId": 7234,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Drottningsylt",
+    "FoodId": 7235,
+    "Enhet": "dl",
+    "Gram": 140
+  },
+  {
+    "Livsmedelsnamn": "Hallonsylt lättsockrad",
+    "FoodId": 7236,
+    "Enhet": "dl",
+    "Gram": 120
+  },
+  {
+    "Livsmedelsnamn": "Ketchup lättsötad",
+    "FoodId": 7244,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Ketchup m. sötningsm.",
+    "FoodId": 7245,
+    "Enhet": "dl",
+    "Gram": 110
+  },
+  {
+    "Livsmedelsnamn": "Flytande margarin fett 70% berikad",
+    "FoodId": 7252,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Karameller gräddkarameller",
+    "FoodId": 7254,
+    "Enhet": "styck",
+    "Gram": 5
+  },
+  {
+    "Livsmedelsnamn": "Saft lättsockrad drickf.",
+    "FoodId": 7255,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vitmögelost smaksatt fett ca 38 %",
+    "FoodId": 7256,
+    "Enhet": "skiva",
+    "Gram": 20
+  },
+  {
+    "Livsmedelsnamn": "Fruktyoghurt fett 3,6% berikad",
+    "FoodId": 7257,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Chips vete m. baconsmak",
+    "FoodId": 7259,
+    "Enhet": "dl",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Matfettsblandning fett 70% typ Flora & smör",
+    "FoodId": 7261,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Lättmargarin fett 40% berikad",
+    "FoodId": 7263,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Vispgrädde ersättningsprod. mjölk olja fett ca 30%",
+    "FoodId": 7264,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Vaniljsås ätf. kyld",
+    "FoodId": 7265,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Kokosmjölk fett ca 18%",
+    "FoodId": 7266,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Äggvita rå eko.",
+    "FoodId": 7267,
+    "Enhet": "styck",
+    "Gram": 30
+  },
+  {
+    "Livsmedelsnamn": "Renfett",
+    "FoodId": 7268,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Klarnat smör ghee",
+    "FoodId": 7269,
+    "Enhet": "dl",
+    "Gram": 90
+  },
+  {
+    "Livsmedelsnamn": "Bordsmargarin fett 79% typ Plant b*tter",
+    "FoodId": 7270,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Bordsmargarin fett 91% typ BreOliv",
+    "FoodId": 7271,
+    "Enhet": "dl",
+    "Gram": 95
+  },
+  {
+    "Livsmedelsnamn": "Cortado",
+    "FoodId": 7293,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Latte Macchiato",
+    "FoodId": 7294,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Flat white",
+    "FoodId": 7295,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Latte smaksatt m. vispad grädde",
+    "FoodId": 7296,
+    "Enhet": "dl",
+    "Gram": 100
+  },
+  {
+    "Livsmedelsnamn": "Iskaffe latte cappuccino macchiato burk flaska",
+    "FoodId": 7298,
+    "Enhet": "dl",
+    "Gram": 100
+  }
+]

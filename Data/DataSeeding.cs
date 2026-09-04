@@ -98,15 +98,13 @@ namespace Naringskollen.Data
                 {
                     await context.Foods.AddRangeAsync(foodItems);
 
-                    // Kolla upp
+                    using var transaction = await context.Database.BeginTransactionAsync();
 
-                    //using var transaction = await context.Database.BeginTransactionAsync();
+                    await context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT Foods ON");
+                    await context.SaveChangesAsync();
+                    await context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT Foods OFF");
 
-                    //await context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT Foods ON");
-                    //await context.SaveChangesAsync();
-                    //await context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT Foods OFF");
-
-                    //await transaction.CommitAsync();
+                    await transaction.CommitAsync();
                 }
             }
         }
@@ -115,7 +113,7 @@ namespace Naringskollen.Data
         {
             if (!context.FoodMeasurements.Any())
             {
-                var data = await File.ReadAllTextAsync("Data/SeedData/FoodMeasurment_data.json");
+                var data = await File.ReadAllTextAsync("Data/SeedData/FoodMeasurement_data.json");
 
                 var options = new JsonSerializerOptions
                 {
