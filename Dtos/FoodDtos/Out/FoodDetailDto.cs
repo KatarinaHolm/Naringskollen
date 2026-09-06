@@ -1,4 +1,4 @@
-﻿using Naringskollen.Dtos.FoodMeasurementsDtos;
+﻿using Naringskollen.Dtos.FoodMeasurementsDtos.Out;
 using Naringskollen.Models;
 
 namespace Naringskollen.Dtos.FoodDtos.Out
@@ -37,6 +37,6 @@ namespace Naringskollen.Dtos.FoodDtos.Out
 
         public string Category { get; set; }
 
-        public List<FoodMeasurementDto> FoodMeasurements { get; set; }
+        public List<FoodMeasurementSummaryDto> FoodMeasurements { get; set; }
     }
 }

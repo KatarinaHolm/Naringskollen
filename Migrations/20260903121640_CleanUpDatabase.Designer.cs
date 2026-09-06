@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Naringskollen.Data;
 
@@ -11,9 +12,11 @@ using Naringskollen.Data;
 namespace Naringskollen.Migrations
 {
     [DbContext(typeof(NaringskollenDbContext))]
-    partial class NaringskollenDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260903121640_CleanUpDatabase")]
+    partial class CleanUpDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -399,15 +402,13 @@ namespace Naringskollen.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("GramWeight")
-                        .HasPrecision(6, 2)
-                        .HasColumnType("decimal(6,2)")
-                        .HasJsonPropertyName("Gram");
+                        .HasPrecision(5, 2)
+                        .HasColumnType("decimal(5,2)");
 
                     b.Property<string>("UnitName")
                         .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
-                        .HasJsonPropertyName("Enhet");
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 

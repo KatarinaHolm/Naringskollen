@@ -1,13 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Naringskollen.Dtos.FoodMeasurementsDtos;
+using Naringskollen.Dtos.FoodMeasurementsDtos.In;
 using System.ComponentModel.DataAnnotations;
 
 namespace Naringskollen.Dtos.FoodDtos.In
 {
     public class UpdateFoodMetadataDto
     {
-        public int Id { get; set; }
-
+       
         [Required(ErrorMessage = "Namn på livsmedel är obligatoriskt.")]
         [StringLength(100, ErrorMessage = "Livsmedelsnamn kan max vara 100 tecken.")]
         public string Name { get; set; }

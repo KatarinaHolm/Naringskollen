@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace Naringskollen.Dtos.FoodMeasurementsDtos
+namespace Naringskollen.Dtos.FoodMeasurementsDtos.In
 {
     public class FoodMeasurementDto
     {

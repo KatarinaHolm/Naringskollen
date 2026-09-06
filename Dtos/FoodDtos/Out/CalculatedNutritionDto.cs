@@ -8,7 +8,7 @@
 
         public string Unit { get; set; }
 
-        public int CalculatedGrams { get; set; }     
+        public decimal CalculatedGrams { get; set; }     
 
         public decimal? Oxalate { get; set; }
 

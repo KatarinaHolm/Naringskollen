@@ -5,7 +5,7 @@ namespace Naringskollen.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FoodsController : ControllerBase
+    public class FoodController : ControllerBase
     {
         //All CRUDs
         //Authorize: Admin -  on Create, Put, Patch och Delete.

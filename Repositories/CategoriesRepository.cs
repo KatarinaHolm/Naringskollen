@@ -1,6 +1,6 @@
 ﻿namespace Naringskollen.Repositories
 {
-    public class ApiFoodSupplementRepository
+    public class CategoriesRepository
     {
     }
 }
