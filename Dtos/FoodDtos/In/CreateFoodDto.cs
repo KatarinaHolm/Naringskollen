@@ -45,8 +45,7 @@ namespace Naringskollen.Dtos.FoodDtos.In
         [Range(0, 100, ErrorMessage = "Värdet måste ligga mellan 0 och 100.")]
         [Precision(5, 2)]
         public decimal TotalSugar { get; set; }
-
-        
+            
         [Range(0, 100, ErrorMessage = "Värdet måste ligga mellan 0 och 100.")]
         [Precision(5, 2)]
         public decimal? SaturatedFat { get; set; }
