@@ -1,44 +1,41 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
 using Microsoft.EntityFrameworkCore;
 using Naringskollen.Dtos.FoodDtos.In;
 using Naringskollen.Dtos.FoodDtos.Out;
 using Naringskollen.Dtos.FoodMeasurementsDtos.Out;
 using Naringskollen.Models;
 using Naringskollen.Repositories.IRepositories;
+using Naringskollen.Services.IServices;
 
 namespace Naringskollen.Services
 {
-    public class FoodService
+    public class FoodService : IFoodService
     {
         private readonly IFoodRepository foodRepository;
+        private readonly ICategoriesRepository categoriesRepository;
 
-        //Create, Put, Patch och Delete.
-
-        //Obs! isSystem = true means the food is not from Livsmedelverkets database.
-
-        //GetAll() - SummaryDto
-
-        //GetalculatedNutritionById - no dto.
-        //Id in Route, others in query: [FromQuery] decimal quantity, [FromQuery] string unit
-
-        public FoodService(IFoodRepository _foodRepository)
+        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository)
         {
             foodRepository = _foodRepository;
+            categoriesRepository = _categoriesRepository;
         }
 
         public async Task<List<FoodSummaryDto>> GetAllAsync(string query)
         {
             var foodSummaries = await foodRepository.GetAllAsync(query);
-                
+
             return foodSummaries;
         }
 
         // For Admin
-        public async Task<FoodDetailDto?> GetByIdAsync(int id)
+        public async Task<FoodDetailDto> GetByIdAsync(int id)
         {
             var foodDetail = await foodRepository.GetByIdAsync(id);
 
-            //Check null
+            if (foodDetail == null)
+            {
+                throw new KeyNotFoundException("Livsmedel kunde inte hittas");
+            }
 
             var foodDto = new FoodDetailDto
             {
@@ -91,7 +88,14 @@ namespace Naringskollen.Services
         {
             var foodDetail = await foodRepository.GetByIdAsync(id);
 
-            //Check null
+            if (foodDetail == null)
+            {
+                throw new KeyNotFoundException("Livsmedel kunde inte hittas");
+            }
+            else if (!foodDetail.FoodMeasurements.Any(fm => fm.UnitName == unit))
+            {
+                throw new ArgumentException("Enhet är inte giltig för livsmedlet");
+            }
 
             var calculatedNutrition = ConverterService.CalculateNutrition(foodDetail, quantity, unit);
 
@@ -100,7 +104,13 @@ namespace Naringskollen.Services
 
         public async Task<FoodDetailDto> CreateAsync(CreateFoodDto dto)
         {
-            //validation of user input
+            //validation of categoryId exist, call för CategoryService
+            var category = await categoriesRepository.GetById(dto.CategoryId);
+
+            if (category == null)
+            {
+                throw new KeyNotFoundException($"Kategori med id {dto.CategoryId} kunde inte hittas.");
+            }
 
             var newFood = new Food
             {
@@ -137,15 +147,13 @@ namespace Naringskollen.Services
                             GramWeight = fm.Grams
                         })
                         .ToList()
-
             };
 
             var savedNewFood = await foodRepository.CreateAsync(newFood);
-            //SKicka tillbaka objekt eller endast bekräftelse?
 
             var foodDto = new FoodDetailDto
             {
-                Id = savedNewFood.Id,                
+                Id = savedNewFood.Id,
 
                 Name = savedNewFood.Name,
 
@@ -173,7 +181,7 @@ namespace Naringskollen.Services
 
                 CategoryId = savedNewFood.CategoryId,
 
-                Category = savedNewFood.Category.Name,
+                Category = category.Name,
 
                 FoodMeasurements = savedNewFood.FoodMeasurements
                        .Select(fm => new FoodMeasurementSummaryDto
@@ -186,10 +194,18 @@ namespace Naringskollen.Services
             return foodDto;
         }
 
-        public async Task<bool> UpdateAsync(int id, UpdateFoodDto dto)
+        public async Task UpdateAsync(int id, UpdateFoodDto dto)
         {
             var updateFood = await foodRepository.GetByIdAsync(id);
-            //Check null
+
+            if (updateFood == null)
+            {
+                throw new KeyNotFoundException("Livsmedel kunde inte hittas");
+            }
+            else if (!updateFood.IsSystem)
+            {
+                throw new InvalidOperationException("Näringsinnehåll för livsmedel från Livsmedelsverket kan inte ändras. Använd uppdatering av metadata istället.");
+            }
 
             updateFood.Name = dto.Name;
 
@@ -226,13 +242,22 @@ namespace Naringskollen.Services
 
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
-            return isUpdated;
+
+            if (!isUpdated)
+            {
+                throw new DbUpdateException("Inga ändringar sparades i databasen.");
+            }
+            
         }
 
-        public async Task<bool> UpdateFoodMetadataAsync(int id, UpdateFoodMetadataDto dto)
+        public async Task UpdateFoodMetadataAsync(int id, UpdateFoodMetadataDto dto)
         {
             var updateFood = await foodRepository.GetByIdAsync(id);
-            //Check null
+
+            if (updateFood == null)
+            {
+                throw new KeyNotFoundException("Livsmedel kunde inte hittas");
+            }
 
             updateFood.Name = dto.Name;
 
@@ -251,14 +276,32 @@ namespace Naringskollen.Services
 
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
-            return isUpdated;
+            if (!isUpdated)
+            {
+                throw new DbUpdateException("Inga ändringar sparades i databasen.");
+            }
+
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
+            var deleteFood = await foodRepository.GetByIdAsync(id);
+
+            if (deleteFood == null)
+            {
+                throw new KeyNotFoundException("Livsmedel kunde inte hittas.");
+            }
+            else if (!deleteFood.IsSystem)
+            {
+                throw new InvalidOperationException("Livsmedel från Livsmedelsverket kan inte raderas.");
+            }
+
             var isDeleted = await foodRepository.DeleteAsync(id);
 
-            return isDeleted;
+            if (!isDeleted)
+            {
+                throw new Exception("Kunde inte radera livsmedlet från databasen.");
+            }
         }
     }
 }
