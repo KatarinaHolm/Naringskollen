@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Naringskollen.Dtos.CategoriesDtos;
 using Naringskollen.Dtos.CategoriesDtos.Out;
-using Naringskollen.Models;
 using Naringskollen.Repositories.IRepositories;
 using Naringskollen.Services.IServices;
 

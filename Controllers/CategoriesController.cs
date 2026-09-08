@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Naringskollen.Dtos.CategoriesDtos.Out;
-using Naringskollen.Repositories;
-using Naringskollen.Repositories.IRepositories;
 using Naringskollen.Services.IServices;
 
 namespace Naringskollen.Controllers

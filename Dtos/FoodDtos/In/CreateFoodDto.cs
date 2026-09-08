@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Naringskollen.Dtos.FoodMeasurementsDtos.In;
-using Naringskollen.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace Naringskollen.Dtos.FoodDtos.In

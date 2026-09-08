@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿
 
 namespace Naringskollen.Dtos.FoodMeasurementsDtos.Out
 {
@@ -9,5 +8,4 @@ namespace Naringskollen.Dtos.FoodMeasurementsDtos.Out
            
         public decimal Grams { get; set; }
     }
-}
 }

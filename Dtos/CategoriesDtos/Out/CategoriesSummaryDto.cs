@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿
 namespace Naringskollen.Dtos.CategoriesDtos.Out
 {
     public class CategoriesSummaryDto

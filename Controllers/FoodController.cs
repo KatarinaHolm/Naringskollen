@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Naringskollen.Dtos.FoodDtos.In;
 using Naringskollen.Dtos.FoodDtos.Out;
@@ -79,14 +78,5 @@ namespace Naringskollen.Controllers
             return NoContent();
         }
 
-        //All CRUDs
-        //Authorize: Admin -  on Create, Put, Patch och Delete.
-
-        //Obs! isSystem = true means the food is not from Livsmedelverkets database.
-
-        //GetAll() - SummaryDto
-
-        //GetById - no dto.
-        //Id in Route, others in query: [FromQuery] decimal quantity, [FromQuery] string unit
     }
 }

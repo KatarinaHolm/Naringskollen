@@ -1,5 +1,4 @@
-﻿using Microsoft.IdentityModel.Tokens.Configuration;
-using Naringskollen.Dtos.FoodDtos.Out;
+﻿using Naringskollen.Dtos.FoodDtos.Out;
 using Naringskollen.Models;
 
 namespace Naringskollen.Services
@@ -28,7 +27,7 @@ namespace Naringskollen.Services
 
             decimal CalculateByDl(List<FoodMeasurement> foodMeasurements, decimal quantity, string unit)
             {
-                var foodMeasurementByDl = foodMeasurements.FirstOrDefault(fm => fm.UnitName == "Dl");
+                var foodMeasurementByDl = foodMeasurements.FirstOrDefault(fm => fm.UnitName == "dl");
                 return quantity * foodMeasurementByDl.GramWeight;
             }; 
             
@@ -68,7 +67,9 @@ namespace Naringskollen.Services
 
                 MonounsaturatedFat = CalculateNutrient(food.MonounsaturatedFat),
 
-                PolyunsaturatedFat = CalculateNutrient(food.PolyunsaturatedFat)
+                PolyunsaturatedFat = CalculateNutrient(food.PolyunsaturatedFat),
+
+                Category = food.Category.Name
             };
 
             return dto;
