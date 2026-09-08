@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Naringskollen.Dtos.FoodMeasurementsDtos;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-
 namespace Naringskollen.Models
 {
     [Index(nameof(Name), IsUnique = true)]
