@@ -4,6 +4,7 @@ using Naringskollen.Dtos.FoodDtos.In;
 using Naringskollen.Dtos.FoodDtos.Out;
 using Naringskollen.Dtos.FoodMeasurementsDtos.Out;
 using Naringskollen.Models;
+using Naringskollen.Repositories;
 using Naringskollen.Repositories.IRepositories;
 using Naringskollen.Services.IServices;
 
@@ -13,11 +14,13 @@ namespace Naringskollen.Services
     {
         private readonly IFoodRepository foodRepository;
         private readonly ICategoriesRepository categoriesRepository;
+        private readonly IFoodMeasurementRepository foodMeasurementRepository;
 
-        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository)
+        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository, IFoodMeasurementRepository _foodMeasurementRepository)
         {
             foodRepository = _foodRepository;
             categoriesRepository = _categoriesRepository;
+            foodMeasurementRepository = _foodMeasurementRepository;
         }
 
         public async Task<List<FoodSummaryDto>> GetAllAsync(string query)
@@ -92,7 +95,8 @@ namespace Naringskollen.Services
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
             }
-            else if (!foodDetail.FoodMeasurements.Any(fm => fm.UnitName == unit))
+            if (unit is not ("g" or "kg") &&
+                !foodDetail.FoodMeasurements.Any(fm => fm.UnitName == unit))
             {
                 throw new ArgumentException("Enhet är inte giltig för livsmedlet");
             }
@@ -103,8 +107,7 @@ namespace Naringskollen.Services
         }
 
         public async Task<FoodDetailDto> CreateAsync(CreateFoodDto dto)
-        {
-            //validation of categoryId exist, call för CategoryService
+        {            
             var category = await categoriesRepository.GetById(dto.CategoryId);
 
             if (category == null)
@@ -140,16 +143,34 @@ namespace Naringskollen.Services
 
                 CategoryId = dto.CategoryId,
 
-                FoodMeasurements = dto.FoodMeasurements
-                        .Select(fm => new FoodMeasurement
-                        {
-                            UnitName = fm.Unit,
-                            GramWeight = fm.Grams
-                        })
-                        .ToList()
+                
             };
+            
 
             var savedNewFood = await foodRepository.CreateAsync(newFood);
+            var foodMeasurementSummaries = new List<FoodMeasurementSummaryDto>();
+
+            if (dto.FoodMeasurements.Any())
+            {
+                var foodMeasurements = dto.FoodMeasurements
+                    .Select(fm => new FoodMeasurement
+                    {
+                        UnitName = fm.Unit,
+                        GramWeight = fm.Grams,
+                        FoodId = savedNewFood.Id
+                    })
+                    .ToList();
+
+                var savedFoodMeasurements = await foodMeasurementRepository.CreateAsync(foodMeasurements);
+
+                foodMeasurementSummaries = savedFoodMeasurements
+                    .Select(fm => new FoodMeasurementSummaryDto
+                    {
+                        Unit = fm.UnitName,
+                        Grams = fm.GramWeight
+                    })
+                    .ToList();
+            }
 
             var foodDto = new FoodDetailDto
             {
@@ -183,13 +204,7 @@ namespace Naringskollen.Services
 
                 Category = category.Name,
 
-                FoodMeasurements = savedNewFood.FoodMeasurements
-                       .Select(fm => new FoodMeasurementSummaryDto
-                       {
-                           Unit = fm.UnitName,
-                           Grams = fm.GramWeight
-                       })
-                       .ToList()
+                FoodMeasurements = foodMeasurementSummaries
             };
             return foodDto;
         }
@@ -257,7 +272,7 @@ namespace Naringskollen.Services
             if (updateFood == null)
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
-            }
+            }            
 
             updateFood.Name = dto.Name;
 
