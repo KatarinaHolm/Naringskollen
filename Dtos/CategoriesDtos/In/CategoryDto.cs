@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Naringskollen.Dtos.CategoriesDtos
+namespace Naringskollen.Dtos.CategoriesDtos.In
 {
     public class CategoryDto
     {

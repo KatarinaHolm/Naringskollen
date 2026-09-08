@@ -46,15 +46,15 @@ namespace Naringskollen.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost]       
-        public async Task<ActionResult<FoodDetailDto>> Create(CreateFoodDto dto)
+        public async Task<ActionResult<FoodDetailDto>> Create([FromBody] CreateFoodDto dto)
         {
             var createdFood = await foodService.CreateAsync(dto);
             return Created("api/foodcontroller", createdFood);
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpPut]
-        public async Task<IActionResult> Update(int id, UpdateFoodDto dto)
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update([FromRoute]int id, [FromBody]UpdateFoodDto dto)
         {
             await foodService.UpdateAsync(id, dto);        
 
@@ -62,11 +62,22 @@ namespace Naringskollen.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpPatch]
-        
+        [HttpPatch("{id:int}")]
+        public async Task<IActionResult> UpdateFoodMetadata([FromRoute] int id, [FromBody] UpdateFoodMetadataDto dto)
+        {
+            await foodService.UpdateFoodMetadataAsync(id, dto);
+
+            return NoContent();
+        }
 
         [Authorize(Roles = "Admin")]
-        [HttpDelete]
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            await foodService.DeleteAsync(id);
+
+            return NoContent();
+        }
 
         //All CRUDs
         //Authorize: Admin -  on Create, Put, Patch och Delete.

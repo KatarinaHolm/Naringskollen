@@ -30,6 +30,5 @@ namespace Naringskollen.Repositories
 
             return category;
         }
-
     }
 }

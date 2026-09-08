@@ -274,8 +274,8 @@ namespace Naringskollen.Services
                     })
                 .ToList();
 
-
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
+
             if (!isUpdated)
             {
                 throw new DbUpdateException("Inga ändringar sparades i databasen.");
