@@ -2,6 +2,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Naringskollen.Data;
+using Naringskollen.Middleware;
+using Naringskollen.Repositories;
+using Naringskollen.Repositories.IRepositories;
+using Naringskollen.Services;
+using Naringskollen.Services.IServices;
 using Scalar.AspNetCore;
 
 namespace Naringskollen
@@ -30,13 +35,18 @@ namespace Naringskollen
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
+            builder.Services.AddScoped<IFoodRepository, FoodRepository>();
+            builder.Services.AddScoped<IFoodService, FoodService>();
+            builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
+            builder.Services.AddScoped<ICategoriesService, CategoriesService>();
+
             builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
             await app.InitializeDatabaseAsync();
 
-            //Middleware?
+            app.UseMiddleware<GlobalExceptionMiddleware>();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -48,7 +58,6 @@ namespace Naringskollen
             app.UseHttpsRedirection();
 
             app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.MapIdentityApi<IdentityUser<int>>();

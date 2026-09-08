@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Naringskollen.Data;
 using Naringskollen.Dtos.FoodDtos.Out;
-using Naringskollen.Dtos.FoodMeasurementsDtos.In;
 using Naringskollen.Dtos.FoodMeasurementsDtos.Out;
 using Naringskollen.Models;
 using Naringskollen.Repositories.IRepositories;
@@ -44,7 +43,10 @@ namespace Naringskollen.Repositories
 
         public async Task<Food?> GetByIdAsync(int id)
         {
-            var foodDetail = await context.Foods.FindAsync(id);
+            var foodDetail = await context.Foods
+                .Include(f => f.FoodMeasurements)
+                .Include(f => f.Category)
+                .FirstOrDefaultAsync(f => f.Id == id);                
 
             return foodDetail;
         }

@@ -18,6 +18,6 @@ namespace Naringskollen.Dtos.FoodDtos.In
         [Required(ErrorMessage = "Kategori måste anges.")]      
         public int CategoryId { get; set; }
 
-        public List<FoodMeasurementDto> FoodMeasurements { get; set; }
+        public List<CreateFoodMeasurementDto> FoodMeasurements { get; set; }
     }
 }

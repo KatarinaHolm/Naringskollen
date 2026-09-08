@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Naringskollen.Dtos.FoodMeasurementsDtos.In
 {
-    public class FoodMeasurementDto
+    public class CreateFoodMeasurementDto
     {
         [Required(ErrorMessage = "Namn på enhet är obligatoriskt")]
         [StringLength(100, ErrorMessage = "Enhetsnamn kan max vara 100 tecken.")]
