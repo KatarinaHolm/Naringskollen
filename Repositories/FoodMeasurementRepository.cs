@@ -1,5 +1,6 @@
 ﻿using Naringskollen.Data;
 using Naringskollen.Models;
+using Naringskollen.Repositories.IRepositories;
 
 namespace Naringskollen.Repositories
 {
@@ -22,6 +23,22 @@ namespace Naringskollen.Repositories
             await context.SaveChangesAsync();
 
             return foodMeasurements;
+        }
+
+        public async Task<bool> UpdateAsync(List<FoodMeasurement> foodMeasurements)
+        {
+            foreach (var foodMeasurement in foodMeasurements)
+            {
+                context.FoodMeasurements.Update(foodMeasurement);
+            }
+            var result = await context.SaveChangesAsync();
+
+            if (result > 0)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

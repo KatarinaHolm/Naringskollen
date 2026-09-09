@@ -32,6 +32,7 @@ namespace Naringskollen.Repositories
                     FoodMeasurements = f.FoodMeasurements
                         .Select(fm => new FoodMeasurementSummaryDto
                         {
+                            Id = fm.Id,
                             Unit = fm.UnitName,
                             Grams = fm.GramWeight
                         })

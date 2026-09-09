@@ -4,9 +4,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Naringskollen.Dtos.FoodMeasurementsDtos.In
 {
-    public class CreateFoodMeasurementDto
+    public class UpdateFoodMeasurementDto
     {
-        [Required(ErrorMessage = "Namn på enhet är obligatoriskt")]        
+        [Required(ErrorMessage = "Id på enhet är obligatoriskt")]
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Namn på enhet är obligatoriskt")]
         public FoodMeasurementUnit? Unit { get; set; }
 
         [Required(ErrorMessage = "Antal gram för vald enhet är obligatoriskt.")]
