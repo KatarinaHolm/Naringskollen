@@ -4,7 +4,6 @@ using Naringskollen.Dtos.FoodDtos.In;
 using Naringskollen.Dtos.FoodDtos.Out;
 using Naringskollen.Dtos.FoodMeasurementsDtos.Out;
 using Naringskollen.Models;
-using Naringskollen.Repositories;
 using Naringskollen.Repositories.IRepositories;
 using Naringskollen.Services.IServices;
 
@@ -77,6 +76,7 @@ namespace Naringskollen.Services
                 FoodMeasurements = foodDetail.FoodMeasurements
                         .Select(fm => new FoodMeasurementSummaryDto
                         {
+                            Id = fm.Id,
                             Unit = fm.UnitName,
                             Grams = fm.GramWeight
                         })
@@ -152,11 +152,16 @@ namespace Naringskollen.Services
 
             if (dto.FoodMeasurements.Any())
             {
+                if (dto.FoodMeasurements.Any(fm => fm == null || fm.Unit == null || fm.Grams == null))
+                {
+                    throw new ArgumentException("Enhet får inte innehålla null-värden.");
+                }
+
                 var foodMeasurements = dto.FoodMeasurements
                     .Select(fm => new FoodMeasurement
                     {
-                        UnitName = fm.Unit,
-                        GramWeight = fm.Grams,
+                        UnitName = fm.Unit!.ToString(),
+                        GramWeight = fm.Grams!.Value,
                         FoodId = savedNewFood.Id
                     })
                     .ToList();
@@ -166,6 +171,7 @@ namespace Naringskollen.Services
                 foodMeasurementSummaries = savedFoodMeasurements
                     .Select(fm => new FoodMeasurementSummaryDto
                     {
+                        Id = fm.Id,
                         Unit = fm.UnitName,
                         Grams = fm.GramWeight
                     })
@@ -222,6 +228,8 @@ namespace Naringskollen.Services
                 throw new InvalidOperationException("Näringsinnehåll för livsmedel från Livsmedelsverket kan inte ändras. Använd uppdatering av metadata istället.");
             }
 
+
+            //Updating props
             updateFood.Name = dto.Name;
 
             updateFood.Oxalate = dto.Oxalate;
@@ -246,15 +254,29 @@ namespace Naringskollen.Services
 
             updateFood.CategoryId = dto.CategoryId;
 
-            updateFood.FoodMeasurements = dto.FoodMeasurements
-                .Select(fm =>
-                    new FoodMeasurement
-                    {
-                        UnitName = fm.Unit,
-                        GramWeight = fm.Grams
-                    })
-                .ToList();
+            if (dto.FoodMeasurements.Any())
+            {
+                if (dto.FoodMeasurements.Any(fm => fm == null || fm.Unit == null || fm.Grams == null))
+                {
+                    throw new ArgumentException("Enhet får inte innehålla null-värden.");
+                }
 
+                var foodMeasurements = dto.FoodMeasurements
+                    .Select(fm => new FoodMeasurement
+                    {
+                        Id = fm.Id,
+                        UnitName = fm.Unit!.ToString(),
+                        GramWeight = fm.Grams!.Value,
+                        FoodId = updateFood.Id
+                    })
+                    .ToList();
+
+                var updatedFoodMeasurements = await foodMeasurementRepository.UpdateAsync(foodMeasurements);
+                if (!updatedFoodMeasurements)
+                {
+                    throw new DbUpdateException("Inga ändringar för enhetsomvandling sparades i databasen.");
+                }
+            }
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 
@@ -280,14 +302,29 @@ namespace Naringskollen.Services
 
             updateFood.CategoryId = dto.CategoryId;
 
-            updateFood.FoodMeasurements = dto.FoodMeasurements
-                .Select(fm =>
-                    new FoodMeasurement
+            if (dto.FoodMeasurements.Any())
+            {
+                if (dto.FoodMeasurements.Any(fm => fm == null || fm.Unit == null || fm.Grams == null))
+                {
+                    throw new ArgumentException("Enhet får inte innehålla null-värden.");
+                }
+
+                var foodMeasurements = dto.FoodMeasurements
+                    .Select(fm => new FoodMeasurement
                     {
-                        UnitName = fm.Unit,
-                        GramWeight = fm.Grams
+                        Id = fm.Id,
+                        UnitName = fm.Unit!.ToString(),
+                        GramWeight = fm.Grams!.Value,
+                        FoodId = updateFood.Id
                     })
-                .ToList();
+                    .ToList();
+
+                var updatedFoodMeasurements = await foodMeasurementRepository.UpdateAsync(foodMeasurements);
+                if (!updatedFoodMeasurements)
+                {
+                    throw new DbUpdateException("Inga ändringar för enhetsomvandling sparades i databasen.");
+                }
+            }
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 
