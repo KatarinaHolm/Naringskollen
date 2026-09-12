@@ -13,12 +13,14 @@ namespace Naringskollen.Services
     {
         private readonly IFoodRepository foodRepository;
         private readonly ICategoriesRepository categoriesRepository;
+        private readonly IFoodMeasurementService foodMeasurementService;
         private readonly IFoodMeasurementRepository foodMeasurementRepository;
 
-        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository, IFoodMeasurementRepository _foodMeasurementRepository)
+        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository, IFoodMeasurementService _foodMeasurementService, IFoodMeasurementRepository _foodMeasurementRepository)
         {
             foodRepository = _foodRepository;
             categoriesRepository = _categoriesRepository;
+            foodMeasurementService = _foodMeasurementService;
             foodMeasurementRepository = _foodMeasurementRepository;
         }
 
@@ -142,7 +144,6 @@ namespace Naringskollen.Services
                 PolyunsaturatedFat = dto.PolyunsaturatedFat,
 
                 CategoryId = dto.CategoryId,
-
                 
             };
             
@@ -228,7 +229,6 @@ namespace Naringskollen.Services
                 throw new InvalidOperationException("Näringsinnehåll för livsmedel från Livsmedelsverket kan inte ändras. Använd uppdatering av metadata istället.");
             }
 
-
             //Updating props
             updateFood.Name = dto.Name;
 
@@ -254,29 +254,7 @@ namespace Naringskollen.Services
 
             updateFood.CategoryId = dto.CategoryId;
 
-            if (dto.FoodMeasurements.Any())
-            {
-                if (dto.FoodMeasurements.Any(fm => fm == null || fm.Unit == null || fm.Grams == null))
-                {
-                    throw new ArgumentException("Enhet får inte innehålla null-värden.");
-                }
-
-                var foodMeasurements = dto.FoodMeasurements
-                    .Select(fm => new FoodMeasurement
-                    {
-                        Id = fm.Id,
-                        UnitName = fm.Unit!.ToString(),
-                        GramWeight = fm.Grams!.Value,
-                        FoodId = updateFood.Id
-                    })
-                    .ToList();
-
-                var updatedFoodMeasurements = await foodMeasurementRepository.UpdateAsync(foodMeasurements);
-                if (!updatedFoodMeasurements)
-                {
-                    throw new DbUpdateException("Inga ändringar för enhetsomvandling sparades i databasen.");
-                }
-            }
+            await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 
@@ -302,29 +280,7 @@ namespace Naringskollen.Services
 
             updateFood.CategoryId = dto.CategoryId;
 
-            if (dto.FoodMeasurements.Any())
-            {
-                if (dto.FoodMeasurements.Any(fm => fm == null || fm.Unit == null || fm.Grams == null))
-                {
-                    throw new ArgumentException("Enhet får inte innehålla null-värden.");
-                }
-
-                var foodMeasurements = dto.FoodMeasurements
-                    .Select(fm => new FoodMeasurement
-                    {
-                        Id = fm.Id,
-                        UnitName = fm.Unit!.ToString(),
-                        GramWeight = fm.Grams!.Value,
-                        FoodId = updateFood.Id
-                    })
-                    .ToList();
-
-                var updatedFoodMeasurements = await foodMeasurementRepository.UpdateAsync(foodMeasurements);
-                if (!updatedFoodMeasurements)
-                {
-                    throw new DbUpdateException("Inga ändringar för enhetsomvandling sparades i databasen.");
-                }
-            }
+            await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);          
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 

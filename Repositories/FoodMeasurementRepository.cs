@@ -1,4 +1,5 @@
-﻿using Naringskollen.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Naringskollen.Data;
 using Naringskollen.Models;
 using Naringskollen.Repositories.IRepositories;
 
@@ -11,6 +12,15 @@ namespace Naringskollen.Repositories
         public FoodMeasurementRepository(NaringskollenDbContext _context)
         {
             context = _context;
+        }
+
+        public async Task<List<FoodMeasurement>> GetListByIdsAsync(List<int> ids)
+        {
+            var foodMeasurements = await context.FoodMeasurements
+                .Where(fm => ids.Contains(fm.Id))
+                .ToListAsync();            
+            
+            return foodMeasurements;
         }
 
         public async Task<List<FoodMeasurement>> CreateAsync(List<FoodMeasurement> foodMeasurements)
