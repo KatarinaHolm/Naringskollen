@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 #Egna ignores
 Properties/launchsettings.json
+/.github/copilot-instructions.md
