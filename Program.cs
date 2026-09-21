@@ -30,6 +30,16 @@ namespace Naringskollen
                 .AddRoles<IdentityRole<int>>()
                 .AddEntityFrameworkStores<NaringskollenDbContext>();
 
+            //Cookie configuration for Identity for development
+            if (builder.Environment.IsDevelopment())
+            {
+                builder.Services.ConfigureApplicationCookie(option =>
+                {
+                    option.Cookie.SameSite = SameSiteMode.None;
+                    option.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                });
+            }
+
             builder.Services.AddControllers();
 
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -57,6 +67,8 @@ namespace Naringskollen
 
             var app = builder.Build();
 
+            app.UseCors("Frontend");
+
             await app.InitializeDatabaseAsync();
 
             app.UseMiddleware<GlobalExceptionMiddleware>();
@@ -68,12 +80,14 @@ namespace Naringskollen
                 app.MapScalarApiReference();
             }
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection();            
 
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapIdentityApi<IdentityUser<int>>();
+            // to make identity routes have same base url "/api"
+            var api = app.MapGroup("/api");
+            api.MapIdentityApi<IdentityUser<int>>();           
 
             app.MapControllers();
 
