@@ -27,7 +27,7 @@ namespace Naringskollen.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<List<FoodSummaryDto>>> GetById([FromRoute] int id)
+        public async Task<ActionResult<List<FoodDetailDto>>> GetById([FromRoute] int id)
         {
             var food = await foodService.GetByIdAsync(id);
 

@@ -2,9 +2,9 @@
 {
     public enum FoodMeasurementUnit
     {
-        styck,
-        skiva,
-        dl,
+        styck, // 0
+        skiva, // 1
+        dl, // 2
       
     }
 }
