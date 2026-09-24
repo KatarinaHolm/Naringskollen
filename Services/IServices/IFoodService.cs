@@ -10,7 +10,7 @@ namespace Naringskollen.Services.IServices
         Task<List<FoodSummaryDto>> GetAllAsync(string query);
         Task<FoodDetailDto> GetByIdAsync(int id);
         Task<CalculatedNutritionDto> GetCalculatedNutritionByIdAsync(int id, decimal quantity, string unit);
-        Task UpdateAsync(int id, UpdateFoodDto dto);
-        Task UpdateFoodMetadataAsync(int id, UpdateFoodMetadataDto dto);
+        Task<FoodDetailDto> UpdateAsync(int id, UpdateFoodDto dto);
+        Task<FoodDetailDto> UpdateFoodMetadataAsync(int id, UpdateFoodMetadataDto dto);
     }
 }

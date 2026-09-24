@@ -53,20 +53,20 @@ namespace Naringskollen.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update([FromRoute]int id, [FromBody]UpdateFoodDto dto)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateFoodDto dto)
         {
-            await foodService.UpdateAsync(id, dto);        
+            var updatedFood = await foodService.UpdateAsync(id, dto);        
 
-            return NoContent();
+            return Ok(updatedFood);
         }
 
         [Authorize(Roles = "Admin")]
         [HttpPatch("{id:int}")]
         public async Task<IActionResult> UpdateFoodMetadata([FromRoute] int id, [FromBody] UpdateFoodMetadataDto dto)
         {
-            await foodService.UpdateFoodMetadataAsync(id, dto);
+            var updatedFood = await foodService.UpdateFoodMetadataAsync(id, dto);
 
-            return NoContent();
+            return Ok(updatedFood);
         }
 
         [Authorize(Roles = "Admin")]

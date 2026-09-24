@@ -87,7 +87,7 @@ namespace Naringskollen
 
             // to make identity routes have same base url "/api"
             var api = app.MapGroup("/api");
-            api.MapIdentityApi<IdentityUser<int>>();           
+            api.MapIdentityApi<IdentityUser<int>>();            
 
             app.MapControllers();
 

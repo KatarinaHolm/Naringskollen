@@ -39,53 +39,9 @@ namespace Naringskollen.Services
             if (foodDetail == null)
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
-            }
+            }            
 
-            var foodDto = new FoodDetailDto
-            {
-                Id = foodDetail.Id,
-
-                ExternalId = foodDetail.ExternalId,
-
-                Name = foodDetail.Name,
-
-                IsSystem = foodDetail.IsSystem,
-
-                Oxalate = foodDetail.Oxalate,
-
-                Kcal = foodDetail.Kcal,
-
-                Fat = foodDetail.Fat,
-
-                Protein = foodDetail.Protein,
-
-                Carbohydrate = foodDetail.Carbohydrate,
-
-                Fiber = foodDetail.Fiber,
-
-                TotalSugar = foodDetail.TotalSugar,
-
-                SaturatedFat = foodDetail.SaturatedFat,
-
-                MonounsaturatedFat = foodDetail.MonounsaturatedFat,
-
-                PolyunsaturatedFat = foodDetail.PolyunsaturatedFat,
-
-                CategoryId = foodDetail.CategoryId,
-
-                Category = foodDetail.Category.Name,
-
-                FoodMeasurements = foodDetail.FoodMeasurements
-                        .Select(fm => new FoodMeasurementSummaryDto
-                        {
-                            Id = fm.Id,
-                            Unit = fm.UnitName,
-                            Grams = fm.GramWeight
-                        })
-                        .ToList()
-            };
-
-            return foodDto;
+            return MapToFoodDetailDto(foodDetail, foodDetail.Category.Name);
         }
 
         //For Users
@@ -97,8 +53,8 @@ namespace Naringskollen.Services
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
             }
-            if (unit is not ("g" or "kg") &&
-                !foodDetail.FoodMeasurements.Any(fm => fm.UnitName == unit))
+
+            if (unit is not ("g" or "kg") && !foodDetail.FoodMeasurements.Any(fm => fm.UnitName == unit))
             {
                 throw new ArgumentException("Enhet är inte giltig för livsmedlet");
             }
@@ -109,7 +65,7 @@ namespace Naringskollen.Services
         }
 
         public async Task<FoodDetailDto> CreateAsync(CreateFoodDto dto)
-        {            
+        {
             var category = await categoriesRepository.GetById(dto.CategoryId);
 
             if (category == null)
@@ -120,36 +76,21 @@ namespace Naringskollen.Services
             var newFood = new Food
             {
                 Name = dto.Name,
-
                 IsSystem = true,
-
                 Oxalate = dto.Oxalate,
-
                 Kcal = dto.Kcal,
-
                 Fat = dto.Fat,
-
                 Protein = dto.Protein,
-
                 Carbohydrate = dto.Carbohydrate,
-
                 Fiber = dto.Fiber,
-
                 TotalSugar = dto.TotalSugar,
-
                 SaturatedFat = dto.SaturatedFat,
-
                 MonounsaturatedFat = dto.MonounsaturatedFat,
-
                 PolyunsaturatedFat = dto.PolyunsaturatedFat,
-
                 CategoryId = dto.CategoryId,
-                
             };
-            
 
             var savedNewFood = await foodRepository.CreateAsync(newFood);
-            var foodMeasurementSummaries = new List<FoodMeasurementSummaryDto>();
 
             if (dto.FoodMeasurements.Any())
             {
@@ -169,54 +110,13 @@ namespace Naringskollen.Services
 
                 var savedFoodMeasurements = await foodMeasurementRepository.CreateAsync(foodMeasurements);
 
-                foodMeasurementSummaries = savedFoodMeasurements
-                    .Select(fm => new FoodMeasurementSummaryDto
-                    {
-                        Id = fm.Id,
-                        Unit = fm.UnitName,
-                        Grams = fm.GramWeight
-                    })
-                    .ToList();
+                savedNewFood.FoodMeasurements = savedFoodMeasurements;
             }
 
-            var foodDto = new FoodDetailDto
-            {
-                Id = savedNewFood.Id,
-
-                Name = savedNewFood.Name,
-
-                IsSystem = savedNewFood.IsSystem,
-
-                Oxalate = savedNewFood.Oxalate,
-
-                Kcal = savedNewFood.Kcal,
-
-                Fat = savedNewFood.Fat,
-
-                Protein = savedNewFood.Protein,
-
-                Carbohydrate = savedNewFood.Carbohydrate,
-
-                Fiber = savedNewFood.Fiber,
-
-                TotalSugar = savedNewFood.TotalSugar,
-
-                SaturatedFat = savedNewFood.SaturatedFat,
-
-                MonounsaturatedFat = savedNewFood.MonounsaturatedFat,
-
-                PolyunsaturatedFat = savedNewFood.PolyunsaturatedFat,
-
-                CategoryId = savedNewFood.CategoryId,
-
-                Category = category.Name,
-
-                FoodMeasurements = foodMeasurementSummaries
-            };
-            return foodDto;
+            return MapToFoodDetailDto(savedNewFood, category.Name);
         }
 
-        public async Task UpdateAsync(int id, UpdateFoodDto dto)
+        public async Task<FoodDetailDto> UpdateAsync(int id, UpdateFoodDto dto)
         {
             var updateFood = await foodRepository.GetByIdAsync(id);
 
@@ -224,6 +124,7 @@ namespace Naringskollen.Services
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
             }
+
             else if (!updateFood.IsSystem)
             {
                 throw new InvalidOperationException("Näringsinnehåll för livsmedel från Livsmedelsverket kan inte ändras. Använd uppdatering av metadata istället.");
@@ -231,29 +132,28 @@ namespace Naringskollen.Services
 
             //Updating props
             updateFood.Name = dto.Name;
-
             updateFood.Oxalate = dto.Oxalate;
-
             updateFood.Kcal = dto.Kcal;
-
             updateFood.Fat = dto.Fat;
-
             updateFood.Protein = dto.Protein;
-
             updateFood.Carbohydrate = dto.Carbohydrate;
-
             updateFood.Fiber = dto.Fiber;
-
             updateFood.TotalSugar = dto.TotalSugar;
-
             updateFood.SaturatedFat = dto.SaturatedFat;
-
             updateFood.MonounsaturatedFat = dto.MonounsaturatedFat;
-
             updateFood.PolyunsaturatedFat = dto.PolyunsaturatedFat;
-
             updateFood.CategoryId = dto.CategoryId;
 
+            // Checking catergory exists
+            var category = await categoriesRepository.GetById(dto.CategoryId);
+
+            if (category == null)
+            {
+                throw new KeyNotFoundException(
+                    $"Kategori med id {dto.CategoryId} kunde inte hittas.");
+            }
+
+            // Updating foodmeasurments
             await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
@@ -262,25 +162,35 @@ namespace Naringskollen.Services
             {
                 throw new DbUpdateException("Inga ändringar sparades i databasen.");
             }
-            
+
+            return MapToFoodDetailDto(updateFood, category.Name);
+
         }
 
-        public async Task UpdateFoodMetadataAsync(int id, UpdateFoodMetadataDto dto)
+        public async Task<FoodDetailDto> UpdateFoodMetadataAsync(int id, UpdateFoodMetadataDto dto)
         {
             var updateFood = await foodRepository.GetByIdAsync(id);
 
             if (updateFood == null)
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
-            }            
+            }
 
             updateFood.Name = dto.Name;
-
             updateFood.Oxalate = dto.Oxalate;
-
             updateFood.CategoryId = dto.CategoryId;
 
-            await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);          
+            var category = await categoriesRepository.GetById(dto.CategoryId);
+
+            // Checking catergory exists
+            if (category == null)
+            {
+                throw new KeyNotFoundException(
+                    $"Kategori med id {dto.CategoryId} kunde inte hittas.");
+            }
+
+            // Updating foodmeasurments
+            await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 
@@ -288,6 +198,8 @@ namespace Naringskollen.Services
             {
                 throw new DbUpdateException("Inga ändringar sparades i databasen.");
             }
+
+            return MapToFoodDetailDto(updateFood, category.Name);
 
         }
 
@@ -299,6 +211,7 @@ namespace Naringskollen.Services
             {
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas.");
             }
+
             else if (!deleteFood.IsSystem)
             {
                 throw new InvalidOperationException("Livsmedel från Livsmedelsverket kan inte raderas.");
@@ -310,6 +223,38 @@ namespace Naringskollen.Services
             {
                 throw new Exception("Kunde inte radera livsmedlet från databasen.");
             }
+        }
+
+        private static FoodDetailDto MapToFoodDetailDto(Food food, string categoryName)
+        {
+            return new FoodDetailDto
+            {
+                Id = food.Id,
+                ExternalId = food.ExternalId,
+                Name = food.Name,
+                IsSystem = food.IsSystem,
+                Oxalate = food.Oxalate,
+                Kcal = food.Kcal,
+                Fat = food.Fat,
+                Protein = food.Protein,
+                Carbohydrate = food.Carbohydrate,
+                Fiber = food.Fiber,
+                TotalSugar = food.TotalSugar,
+                SaturatedFat = food.SaturatedFat,
+                MonounsaturatedFat = food.MonounsaturatedFat,
+                PolyunsaturatedFat = food.PolyunsaturatedFat,
+                CategoryId = food.CategoryId,
+                Category = categoryName,
+
+                FoodMeasurements = food.FoodMeasurements
+                    .Select(fm => new FoodMeasurementSummaryDto
+                    {
+                        Id = fm.Id,
+                        Unit = fm.UnitName,
+                        Grams = fm.GramWeight
+                    })
+                    .ToList()
+            };
         }
     }
 }
