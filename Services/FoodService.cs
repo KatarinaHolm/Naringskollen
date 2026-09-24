@@ -176,7 +176,6 @@ namespace Naringskollen.Services
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
             }
 
-            updateFood.Name = dto.Name;
             updateFood.Oxalate = dto.Oxalate;
             updateFood.CategoryId = dto.CategoryId;
 
