@@ -1,33 +1,34 @@
 ﻿using Naringskollen.Dtos.FoodDtos.Out;
 using Naringskollen.Models;
+using Naringskollen.Models.Enums;
 
 namespace Naringskollen.Services
 {
     public static class ConverterService
     {
-        public static CalculatedNutritionDto CalculateNutrition(Food food, decimal quantity, string unit)
+        public static CalculatedNutritionDto CalculateNutrition(Food food, decimal quantity, FoodMeasurementUnit unit)
         {   
             //Calculate weight of requested amount of food
             decimal weightInGrams = unit switch
             {
-                "g" => quantity,
-                "kg" => quantity * 1000,
-                "styck" or "skiva" => CalculateByPiece(food.FoodMeasurements, quantity, unit),
-                "dl" => CalculateByDl(food.FoodMeasurements, quantity, unit),
-                "msk" => 0.15m * CalculateByDl(food.FoodMeasurements, quantity, unit),
-                "tsk" => 0.05m * CalculateByDl(food.FoodMeasurements, quantity, unit),
+                FoodMeasurementUnit.g => quantity,
+                FoodMeasurementUnit.kg => quantity * 1000,
+                FoodMeasurementUnit.styck or FoodMeasurementUnit.skiva => CalculateByPiece(food.FoodMeasurements, quantity, unit),
+                FoodMeasurementUnit.dl => CalculateByDl(food.FoodMeasurements, quantity, unit),
+                FoodMeasurementUnit.msk => 0.15m * CalculateByDl(food.FoodMeasurements, quantity, unit),
+                FoodMeasurementUnit.tsk => 0.05m * CalculateByDl(food.FoodMeasurements, quantity, unit),
                 _ => quantity
             };
 
-            decimal CalculateByPiece(List<FoodMeasurement> foodMeasurements, decimal quantity, string unit)
+            decimal CalculateByPiece(List<FoodMeasurement> foodMeasurements, decimal quantity, FoodMeasurementUnit unit)
             {
-                var foodMeasurement = foodMeasurements.FirstOrDefault(fm => fm.UnitName == unit);
+                var foodMeasurement = foodMeasurements.FirstOrDefault(fm => fm.Unit == unit);
                 return quantity * foodMeasurement.GramWeight;
             };
 
-            decimal CalculateByDl(List<FoodMeasurement> foodMeasurements, decimal quantity, string unit)
+            decimal CalculateByDl(List<FoodMeasurement> foodMeasurements, decimal quantity, FoodMeasurementUnit unit)
             {
-                var foodMeasurementByDl = foodMeasurements.FirstOrDefault(fm => fm.UnitName == "dl");
+                var foodMeasurementByDl = foodMeasurements.FirstOrDefault(fm => fm.Unit == FoodMeasurementUnit.dl);
                 return quantity * foodMeasurementByDl.GramWeight;
             }; 
             
