@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Naringskollen.Models.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
@@ -8,10 +9,10 @@ namespace Naringskollen.Models
     {
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(100)]
+        [Required]        
         [JsonPropertyName("Enhet")]
-        public string UnitName { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public FoodMeasurementUnit Unit { get; set; }
 
         [Required]
         [Range(0, 1000)]
