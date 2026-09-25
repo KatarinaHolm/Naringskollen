@@ -83,6 +83,6 @@ namespace Naringskollen.Models
 
         public Category Category { get; set; }
 
-        public List<FoodMeasurement> FoodMeasurements { get; set; }
+        public List<FoodMeasurement> FoodMeasurements { get; set; } = [];
     }
 }

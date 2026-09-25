@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Naringskollen.Dtos.FoodDtos.In;
 using Naringskollen.Dtos.FoodDtos.Out;
+using Naringskollen.Models.Enums;
 using Naringskollen.Services.IServices;
 
 namespace Naringskollen.Controllers
@@ -36,7 +37,7 @@ namespace Naringskollen.Controllers
 
         
         [HttpGet("{id:int}/calculate")]
-        public async Task<ActionResult<CalculatedNutritionDto>> GetCalculatedNutrition([FromRoute] int id, [FromQuery] decimal quantity, [FromQuery] string unit)
+        public async Task<ActionResult<CalculatedNutritionDto>> GetCalculatedNutrition([FromRoute] int id, [FromQuery] decimal quantity, [FromQuery] FoodMeasurementUnit unit)
         {
             var food = await foodService.GetCalculatedNutritionByIdAsync(id, quantity, unit);
 

@@ -41,7 +41,7 @@ namespace Naringskollen.Services
             foreach (var measurement in existingfoodMeasurements)
             {
                 var dtoItem = dtos.FirstOrDefault(fm => fm.Id == measurement.Id);
-                measurement.UnitName = dtoItem.Unit!.ToString();
+                measurement.Unit = dtoItem.Unit.Value;
                 measurement.GramWeight = dtoItem.Grams!.Value;
             }
 

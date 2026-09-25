@@ -1,4 +1,7 @@
-﻿namespace Naringskollen.Dtos.FoodDtos.Out
+﻿using Naringskollen.Models.Enums;
+using System.Text.Json.Serialization;
+
+namespace Naringskollen.Dtos.FoodDtos.Out
 {
     public class CalculatedNutritionDto
     {
@@ -6,7 +9,8 @@
 
         public decimal Quantity { get; set; }
 
-        public string Unit { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public FoodMeasurementUnit? Unit { get; set; }
 
         public decimal CalculatedGrams { get; set; }     
 

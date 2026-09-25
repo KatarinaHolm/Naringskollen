@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Naringskollen.Models;
+using Naringskollen.Models.Enums;
 
 namespace Naringskollen.Data
 {
@@ -21,6 +22,10 @@ namespace Naringskollen.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<FoodMeasurement>()
+                .Property(fm => fm.Unit)
+                .HasConversion<string>();
             
             builder.Entity<Category>().HasData(
                 new Category

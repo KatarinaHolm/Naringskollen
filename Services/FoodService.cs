@@ -4,6 +4,7 @@ using Naringskollen.Dtos.FoodDtos.In;
 using Naringskollen.Dtos.FoodDtos.Out;
 using Naringskollen.Dtos.FoodMeasurementsDtos.Out;
 using Naringskollen.Models;
+using Naringskollen.Models.Enums;
 using Naringskollen.Repositories.IRepositories;
 using Naringskollen.Services.IServices;
 
@@ -45,7 +46,7 @@ namespace Naringskollen.Services
         }
 
         //For Users
-        public async Task<CalculatedNutritionDto> GetCalculatedNutritionByIdAsync(int id, decimal quantity, string unit)
+        public async Task<CalculatedNutritionDto> GetCalculatedNutritionByIdAsync(int id, decimal quantity, FoodMeasurementUnit unit)
         {
             var foodDetail = await foodRepository.GetByIdAsync(id);
 
@@ -54,7 +55,7 @@ namespace Naringskollen.Services
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
             }
 
-            if (unit is not ("g" or "kg") && !foodDetail.FoodMeasurements.Any(fm => fm.UnitName == unit))
+            if (unit is not (FoodMeasurementUnit.g or FoodMeasurementUnit.kg) && !foodDetail.FoodMeasurements.Any(fm => fm.Unit == unit))
             {
                 throw new ArgumentException("Enhet är inte giltig för livsmedlet");
             }
@@ -102,7 +103,7 @@ namespace Naringskollen.Services
                 var foodMeasurements = dto.FoodMeasurements
                     .Select(fm => new FoodMeasurement
                     {
-                        UnitName = fm.Unit!.ToString(),
+                        Unit = fm.Unit.Value,
                         GramWeight = fm.Grams!.Value,
                         FoodId = savedNewFood.Id
                     })
@@ -245,11 +246,11 @@ namespace Naringskollen.Services
                 CategoryId = food.CategoryId,
                 Category = categoryName,
 
-                FoodMeasurements = food.FoodMeasurements
+                FoodMeasurements = (food.FoodMeasurements ?? [])
                     .Select(fm => new FoodMeasurementSummaryDto
                     {
                         Id = fm.Id,
-                        Unit = fm.UnitName,
+                        Unit = fm.Unit,
                         Grams = fm.GramWeight
                     })
                     .ToList()
