@@ -80,6 +80,12 @@ namespace Naringskollen
                 app.MapScalarApiReference();
             }
 
+            app.MapOpenApi(); 
+            app.MapScalarApiReference(options =>
+            {
+                options.WithTitle("Näringskollen - API");                       
+            });
+
             app.UseHttpsRedirection();            
 
             app.UseAuthentication();
