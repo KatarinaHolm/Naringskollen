@@ -12,8 +12,8 @@ using Naringskollen.Data;
 namespace Naringskollen.Migrations
 {
     [DbContext(typeof(NaringskollenDbContext))]
-    [Migration("20260902142623_SeedCategories")]
-    partial class SeedCategories
+    [Migration("20260927140019_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,15 +53,6 @@ namespace Naringskollen.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ConcurrencyStamp = "5df68d82-9384-4f04-b303-960447f8c70a",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -291,12 +282,12 @@ namespace Naringskollen.Migrations
                         new
                         {
                             Id = 8,
-                            Name = "Fetter, oljor & såser"
+                            Name = "Fetter & oljor"
                         },
                         new
                         {
                             Id = 9,
-                            Name = "Färdiga rätter & snabbmat"
+                            Name = "Färdiga rätter, såser & snabbmat"
                         },
                         new
                         {
@@ -311,7 +302,7 @@ namespace Naringskollen.Migrations
                         new
                         {
                             Id = 12,
-                            Name = "Skafferi & kryddor"
+                            Name = "Skafferi, smaksättare & kryddor"
                         });
                 });
 
@@ -411,13 +402,14 @@ namespace Naringskollen.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("GramWeight")
-                        .HasPrecision(5, 2)
-                        .HasColumnType("decimal(5,2)");
+                        .HasPrecision(6, 2)
+                        .HasColumnType("decimal(6,2)")
+                        .HasJsonPropertyName("Gram");
 
-                    b.Property<string>("UnitName")
+                    b.Property<string>("Unit")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasJsonPropertyName("Enhet");
 
                     b.HasKey("Id");
 

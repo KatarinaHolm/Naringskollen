@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Naringskollen.Migrations
 {
     /// <inheritdoc />
@@ -209,8 +211,8 @@ namespace Naringskollen.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UnitName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    GramWeight = table.Column<decimal>(type: "decimal(5,2)", precision: 5, scale: 2, nullable: false),
+                    Unit = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GramWeight = table.Column<decimal>(type: "decimal(6,2)", precision: 6, scale: 2, nullable: false),
                     FoodId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -225,9 +227,23 @@ namespace Naringskollen.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { 1, "f3c19b10-915f-4e94-bf29-933730a322b2", "Admin", "ADMIN" });
+                table: "Categories",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Grönsaker, potatis & rotfrukter" },
+                    { 2, "Frukt & bär" },
+                    { 3, "Bröd, pasta & gryn" },
+                    { 4, "Nötter, frön & baljväxter" },
+                    { 5, "Kött, fågel & chark" },
+                    { 6, "Fisk & skaldjur" },
+                    { 7, "Ägg, mejeri & växtbaserat" },
+                    { 8, "Fetter & oljor" },
+                    { 9, "Färdiga rätter, såser & snabbmat" },
+                    { 10, "Sötsaker, snacks & bakverk" },
+                    { 11, "Drycker" },
+                    { 12, "Skafferi, smaksättare & kryddor" }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
