@@ -16,7 +16,7 @@ namespace Naringskollen.Data
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
             var userManager = services.GetRequiredService<UserManager<IdentityUser<int>>>();
             var context = services.GetRequiredService<NaringskollenDbContext>();
-            string adminPassword = app.Configuration["SeedAdmin:Password"];
+            string adminPassword = app.Configuration["AdminPassword"];
 
             await context.Database.MigrateAsync();
 
