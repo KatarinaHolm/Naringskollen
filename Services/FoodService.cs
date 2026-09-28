@@ -55,7 +55,14 @@ namespace Naringskollen.Services
                 throw new KeyNotFoundException("Livsmedel kunde inte hittas");
             }
 
-            if (unit is not (FoodMeasurementUnit.g or FoodMeasurementUnit.kg) && !foodDetail.FoodMeasurements.Any(fm => fm.Unit == unit))
+            var normalizedUnit = (unit == FoodMeasurementUnit.msk
+                || unit == FoodMeasurementUnit.tsk
+                || unit == FoodMeasurementUnit.dl)
+                ? FoodMeasurementUnit.dl
+                : unit;
+
+            if (normalizedUnit is not (FoodMeasurementUnit.g or FoodMeasurementUnit.kg) 
+                && !foodDetail.FoodMeasurements.Any(fm => fm.Unit == unit))
             {
                 throw new ArgumentException("Enhet är inte giltig för livsmedlet");
             }
