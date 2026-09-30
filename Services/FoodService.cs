@@ -62,7 +62,7 @@ namespace Naringskollen.Services
                 : unit;
 
             if (normalizedUnit is not (FoodMeasurementUnit.g or FoodMeasurementUnit.kg) 
-                && !foodDetail.FoodMeasurements.Any(fm => fm.Unit == unit))
+                && !foodDetail.FoodMeasurements.Any(fm => fm.Unit == normalizedUnit))
             {
                 throw new ArgumentException("Enhet är inte giltig för livsmedlet");
             }
