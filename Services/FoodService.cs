@@ -12,6 +12,9 @@ namespace Naringskollen.Services
 {
     public class FoodService : IFoodService
     {
+        private const decimal MaxQuantity = 1_000_000m;
+        private const decimal MaxCalculatedWeightGrams = 1_000_000m;
+
         private readonly IFoodRepository foodRepository;
         private readonly ICategoriesRepository categoriesRepository;
         private readonly IFoodMeasurementService foodMeasurementService;
@@ -46,6 +49,11 @@ namespace Naringskollen.Services
         //For Users
         public async Task<CalculatedNutritionDto> GetCalculatedNutritionByIdAsync(int id, decimal quantity, FoodMeasurementUnit unit)
         {
+            if (quantity <= 0 || quantity > MaxQuantity)
+            {
+                throw new ArgumentOutOfRangeException(nameof(quantity), "Mängden måste vara större än 0 och högst 1 000 000.");
+            }
+
             var foodDetail = await foodRepository.GetByIdAsync(id);
 
             if (foodDetail == null)
@@ -66,6 +74,11 @@ namespace Naringskollen.Services
             }
 
             var calculatedNutrition = ConverterService.CalculateNutrition(foodDetail, quantity, unit);
+
+            if (calculatedNutrition.CalculatedGrams > MaxCalculatedWeightGrams)
+            {
+                throw new ArgumentOutOfRangeException(nameof(quantity), "Den beräknade vikten får inte överstiga 1 000 000 gram.");
+            }
 
             return calculatedNutrition;
         }
