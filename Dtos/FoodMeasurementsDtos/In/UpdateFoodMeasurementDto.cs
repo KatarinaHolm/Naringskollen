@@ -7,8 +7,7 @@ namespace Naringskollen.Dtos.FoodMeasurementsDtos.In
 {
     public class UpdateFoodMeasurementDto
     {
-        [Required(ErrorMessage = "Id på enhet är obligatoriskt")]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [Required(ErrorMessage = "Namn på enhet är obligatoriskt")]
         [JsonConverter(typeof(JsonStringEnumConverter))]

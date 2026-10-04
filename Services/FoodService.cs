@@ -15,14 +15,12 @@ namespace Naringskollen.Services
         private readonly IFoodRepository foodRepository;
         private readonly ICategoriesRepository categoriesRepository;
         private readonly IFoodMeasurementService foodMeasurementService;
-        private readonly IFoodMeasurementRepository foodMeasurementRepository;
 
-        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository, IFoodMeasurementService _foodMeasurementService, IFoodMeasurementRepository _foodMeasurementRepository)
+        public FoodService(IFoodRepository _foodRepository, ICategoriesRepository _categoriesRepository, IFoodMeasurementService _foodMeasurementService)
         {
             foodRepository = _foodRepository;
             categoriesRepository = _categoriesRepository;
             foodMeasurementService = _foodMeasurementService;
-            foodMeasurementRepository = _foodMeasurementRepository;
         }
 
         public async Task<List<FoodSummaryDto>> GetAllAsync(string query)
@@ -74,6 +72,8 @@ namespace Naringskollen.Services
 
         public async Task<FoodDetailDto> CreateAsync(CreateFoodDto dto)
         {
+            foodMeasurementService.ValidateCreateMeasurements(dto.FoodMeasurements);
+
             var category = await categoriesRepository.GetById(dto.CategoryId);
 
             if (category == null)
@@ -96,30 +96,16 @@ namespace Naringskollen.Services
                 MonounsaturatedFat = dto.MonounsaturatedFat,
                 PolyunsaturatedFat = dto.PolyunsaturatedFat,
                 CategoryId = dto.CategoryId,
+                FoodMeasurements = dto.FoodMeasurements!
+                    .Select(fm => new FoodMeasurement
+                    {
+                        Unit = fm.Unit!.Value,
+                        GramWeight = fm.Grams!.Value
+                    })
+                    .ToList()
             };
 
             var savedNewFood = await foodRepository.CreateAsync(newFood);
-
-            if (dto.FoodMeasurements.Any())
-            {
-                if (dto.FoodMeasurements.Any(fm => fm == null || fm.Unit == null || fm.Grams == null))
-                {
-                    throw new ArgumentException("Enhet får inte innehålla null-värden.");
-                }
-
-                var foodMeasurements = dto.FoodMeasurements
-                    .Select(fm => new FoodMeasurement
-                    {
-                        Unit = fm.Unit.Value,
-                        GramWeight = fm.Grams!.Value,
-                        FoodId = savedNewFood.Id
-                    })
-                    .ToList();
-
-                var savedFoodMeasurements = await foodMeasurementRepository.CreateAsync(foodMeasurements);
-
-                savedNewFood.FoodMeasurements = savedFoodMeasurements;
-            }
 
             return MapToFoodDetailDto(savedNewFood, category.Name);
         }
@@ -162,7 +148,7 @@ namespace Naringskollen.Services
             }
 
             // Updating foodmeasurments
-            await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);
+            foodMeasurementService.ReplaceMeasurementsForFood(updateFood, dto.FoodMeasurements);
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 
@@ -197,7 +183,7 @@ namespace Naringskollen.Services
             }
 
             // Updating foodmeasurments
-            await foodMeasurementService.UpdateMeasurementsForFoodAsync(updateFood, dto.FoodMeasurements);
+            foodMeasurementService.ReplaceMeasurementsForFood(updateFood, dto.FoodMeasurements);
 
             var isUpdated = await foodRepository.UpdateAsync(updateFood);
 

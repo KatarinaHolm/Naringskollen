@@ -25,7 +25,12 @@ namespace Naringskollen.Data
 
             builder.Entity<FoodMeasurement>()
                 .Property(fm => fm.Unit)
-                .HasConversion<string>();
+                .HasConversion<string>()
+                .HasMaxLength(16);
+
+            builder.Entity<FoodMeasurement>()
+                .HasIndex(fm => new { fm.FoodId, fm.Unit })
+                .IsUnique();
             
             builder.Entity<Category>().HasData(
                 new Category

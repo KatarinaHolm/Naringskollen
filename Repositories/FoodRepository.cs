@@ -63,8 +63,8 @@ namespace Naringskollen.Repositories
 
         public async Task<bool> UpdateAsync(Food updatedFood)
         {
-            context.Foods.Update(updatedFood);
-
+            // GetByIdAsync returns a tracked aggregate. SaveChanges detects changes
+            // to Food and its FoodMeasurements navigation, including added and removed rows.
             var result = await context.SaveChangesAsync();
 
             if (result > 0)

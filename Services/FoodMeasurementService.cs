@@ -1,54 +1,107 @@
-﻿using Microsoft.EntityFrameworkCore;
 using Naringskollen.Dtos.FoodMeasurementsDtos.In;
 using Naringskollen.Models;
-using Naringskollen.Repositories.IRepositories;
+using Naringskollen.Models.Enums;
 using Naringskollen.Services.IServices;
 
 namespace Naringskollen.Services
 {
     public class FoodMeasurementService : IFoodMeasurementService
     {
-        private readonly IFoodMeasurementRepository foodMeasurementRepository;
+        private static readonly HashSet<FoodMeasurementUnit> AllowedUnits =
+        [
+            FoodMeasurementUnit.styck,
+            FoodMeasurementUnit.skiva,
+            FoodMeasurementUnit.dl
+        ];
 
-        public FoodMeasurementService(IFoodMeasurementRepository _foodMeasurementRepository)
+        public void ValidateCreateMeasurements(List<CreateFoodMeasurementDto>? dtos)
         {
-            foodMeasurementRepository = _foodMeasurementRepository;
+            if (dtos == null)
+            {
+                throw new ArgumentException("Måttenhetslistan måste skickas.");
+            }
+
+            ValidateMeasurements(dtos.Select(dto => (dto?.Unit, dto?.Grams)));
         }
 
-        public async Task UpdateMeasurementsForFoodAsync(Food updateFood, List<UpdateFoodMeasurementDto> dtos)
+        public void ReplaceMeasurementsForFood(Food food, List<UpdateFoodMeasurementDto>? dtos)
         {
-            if (!dtos.Any() || dtos == null) return;
-
-            if (dtos.Any(fm => fm.Id <= 0 || fm == null || fm.Unit == null || fm.Grams == null))
+            if (dtos == null)
             {
-                throw new ArgumentException("Enhet får inte innehålla null-värden.");
+                throw new ArgumentException("Måttenhetslistan måste skickas.");
             }
 
-            var existingIds = updateFood.FoodMeasurements.Select(fm => fm.Id).ToList();
-            var requestedIds = dtos.Select(d => d.Id).ToList();
+            ValidateMeasurements(dtos.Select(dto => (dto?.Unit, dto?.Grams)));
 
-            if (!requestedIds.All(id => existingIds.Contains(id)))
+            var currentMeasurements = food.FoodMeasurements;
+            var existingById = currentMeasurements.ToDictionary(measurement => measurement.Id);
+            var requestedIds = dtos
+                .Where(dto => dto?.Id.HasValue == true)
+                .Select(dto => dto!.Id!.Value)
+                .ToList();
+
+            if (requestedIds.Count != requestedIds.Distinct().Count())
             {
-                throw new KeyNotFoundException("En eller flera angivna enheter hör inte till livsmedlet.");
+                throw new ArgumentException("Samma måttenhetsrad får inte anges flera gånger.");
             }
 
-            var existingfoodMeasurements = await foodMeasurementRepository.GetListByIdsAsync(existingIds);
-            if (!existingfoodMeasurements.Any())
+            if (requestedIds.Any(id => !existingById.ContainsKey(id)))
             {
-                throw new KeyNotFoundException("Data för vald enhetsomvandling kunde inte hittas");
+                throw new ArgumentException("En eller flera måttenhetsrader hör inte till livsmedlet.");
             }
 
-            foreach (var measurement in existingfoodMeasurements)
+            var requestedIdSet = requestedIds.ToHashSet();
+            currentMeasurements.RemoveAll(measurement => !requestedIdSet.Contains(measurement.Id));
+
+            foreach (var dto in dtos)
             {
-                var dtoItem = dtos.FirstOrDefault(fm => fm.Id == measurement.Id);
-                measurement.Unit = dtoItem.Unit.Value;
-                measurement.GramWeight = dtoItem.Grams!.Value;
+                var unit = dto!.Unit!.Value;
+                var grams = dto.Grams!.Value;
+
+                if (dto.Id.HasValue)
+                {
+                    var existingMeasurement = existingById[dto.Id.Value];
+                    existingMeasurement.Unit = unit;
+                    existingMeasurement.GramWeight = grams;
+                }
+                else
+                {
+                    currentMeasurements.Add(new FoodMeasurement
+                    {
+                        Unit = unit,
+                        GramWeight = grams,
+                        FoodId = food.Id
+                    });
+                }
             }
 
-            var updatedFoodMeasurements = await foodMeasurementRepository.UpdateAsync(existingfoodMeasurements);
-            if (!updatedFoodMeasurements)
+        }
+
+        private static void ValidateMeasurements(IEnumerable<(FoodMeasurementUnit? Unit, decimal? Grams)> measurements)
+        {
+            var units = new HashSet<FoodMeasurementUnit>();
+
+            foreach (var (unit, grams) in measurements)
             {
-                throw new DbUpdateException("Inga ändringar för enhetsomvandling sparades i databasen.");
+                if (!unit.HasValue || !grams.HasValue)
+                {
+                    throw new ArgumentException("Varje måttenhet måste ha en enhet och en vikt i gram.");
+                }
+
+                if (!AllowedUnits.Contains(unit.Value))
+                {
+                    throw new ArgumentException("Endast styck, skiva och dl kan användas som måttenheter.");
+                }
+
+                if (grams.Value < 0 || grams.Value > 10000)
+                {
+                    throw new ArgumentException("Vikten måste ligga mellan 0 och 1000 gram.");
+                }
+
+                if (!units.Add(unit.Value))
+                {
+                    throw new ArgumentException("Samma måttenhet får bara anges en gång per livsmedel.");
+                }
             }
         }
     }
