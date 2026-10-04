@@ -49,7 +49,6 @@ namespace Naringskollen
             builder.Services.AddScoped<IFoodService, FoodService>();
             builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
             builder.Services.AddScoped<ICategoriesService, CategoriesService>();
-            builder.Services.AddScoped<IFoodMeasurementRepository, FoodMeasurementRepository>();
             builder.Services.AddScoped<IFoodMeasurementService, FoodMeasurementService>();
 
             builder.Services.AddAuthorization();

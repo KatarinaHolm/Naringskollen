@@ -5,6 +5,7 @@ namespace Naringskollen.Services.IServices
 {
     public interface IFoodMeasurementService
     {
-        Task UpdateMeasurementsForFoodAsync(Food updateFood, List<UpdateFoodMeasurementDto> dtos);
+        void ValidateCreateMeasurements(List<CreateFoodMeasurementDto>? dtos);
+        void ReplaceMeasurementsForFood(Food food, List<UpdateFoodMeasurementDto>? dtos);
     }
 }

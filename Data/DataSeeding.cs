@@ -12,7 +12,6 @@ namespace Naringskollen.Data
             using var scope = app.Services.CreateScope();
             var services = scope.ServiceProvider;
 
-
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
             var userManager = services.GetRequiredService<UserManager<IdentityUser<int>>>();
             var context = services.GetRequiredService<NaringskollenDbContext>();
