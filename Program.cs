@@ -68,6 +68,9 @@ namespace Naringskollen
 
             app.UseCors("Frontend");
 
+            // Registration is intentionally disabled; accounts are provisioned administratively.
+            app.UseMiddleware<RegistrationDisabledMiddleware>();
+
             await app.InitializeDatabaseAsync();
 
             app.UseMiddleware<GlobalExceptionMiddleware>();
